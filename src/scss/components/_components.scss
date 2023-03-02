@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(-163deg, #F55648 0%, #D02868 89%);
+  box-shadow: 0 3px 34px 0 rgba(0,0,0,0.30);
+  border-radius: 100px;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  will-change: auto;
+  &:hover {
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.20);
+    text-decoration: none;
+  }
+}

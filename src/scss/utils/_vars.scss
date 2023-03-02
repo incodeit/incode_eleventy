@@ -1,0 +1,25 @@
+/* FONTS
+   ----------------------------- */
+$sans-serif: "futura-pt", sans-serif;
+
+/* SPACINGS
+   ----------------------------- */
+$main-font-size: 15px;
+$spacer: 2rem;
+
+/* COLORS
+   ----------------------------- */
+
+/* MEDIA QUERIES
+   ----------------------------- */
+$breakpoint-sm-mx: '(max-width: 40em)';
+$breakpoint-md-mx: '(max-width: 52em)';
+$breakpoint-lg-mx: '(max-width: 64em)';
+
+$c-breakpoint-smartphone-sm: '(max-width: 320px)';
+$c-breakpoint-smartphone: '(max-width: 375px)';
+$c-breakpoint-smartphone-lg: '(max-width: 650px)';
+$c-breakpoint-tablet-sm: '(max-width: 990px)';
+$c-breakpoint-tablet-lg: '(max-width: 1024px)';
+$c-breakpoint-desktop-sm: '(max-width: 1280px)';
+$c-breakpoint-desktop: '(max-width: 1440px)';

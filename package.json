@@ -1,0 +1,63 @@
+{
+  "name": "incode_eleventy",
+  "version": "0.1.0",
+  "description": "incode website, w/ 11ty",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "run-p serve:eleventy watch:parcel",
+    "serve:eleventy": "cross-env ELEVENTY_ENV=local eleventy --serve",
+    "watch:parcel": "run-p watch:css watch:js watch:images",
+    "watch:css": "parcel watch ./src/scss/index.scss --dist-dir ./dist/css",
+    "watch:js": "parcel watch ./src/js/main.js --dist-dir ./dist/js",
+    "watch:images": "parcel watch ./src/img/*",
+    "build": "run-s clean build:parcel build:eleventy",
+    "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
+    "build:parcel": "run-p build:css build:js build:images",
+    "build:css": "parcel build ./src/scss/index.scss --dist-dir ./dist/css",
+    "build:js": "parcel build ./src/js/main.js --dist-dir ./dist/js",
+    "build:images": "parcel build src/assets/img/*",
+    "clean": "rm -rf dist",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incodeit/incode_eleventy.git"
+  },
+  "keywords": [],
+  "author": "WEBdeBS <info@webdebs.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/incodeit/incode_eleventy/issues"
+  },
+  "homepage": "https://github.com/incodeit/incode_eleventy#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@parcel/transformer-sass": "^2.8.3",
+    "autoprefixer": "^10.4.2",
+    "cross-env": "^7.0.3",
+    "gh-pages": "4.0.0",
+    "html-minifier": "^4.0.0",
+    "npm-run-all": "^4.1.5",
+    "nunjucks": "^3.2.3",
+    "parcel": "^2.2.1",
+    "postcss": "^8.4.5",
+    "sass": "^1.49.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.2",
+    "@webpixels/css": "^1.1.9",
+    "basscss": "^8.1.0",
+    "basscss-sass": "^4.0.0",
+    "bootstrap": "^5.1.3",
+    "gsap": "^3.11.4",
+    "jquery": "^3.6.3",
+    "object-fit-images": "^3.2.4",
+    "scrollmagic": "^2.0.8",
+    "scrollmagic-plugin-gsap": "^1.0.4",
+    "slick-carousel": "^1.8.1",
+    "typed": "^10.0.0-beta.2",
+    "typed.js": "^2.0.12",
+    "vanilla-lazyload": "^17.8.3"
+  }
+}
