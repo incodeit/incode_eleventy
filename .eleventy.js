@@ -11,12 +11,8 @@ module.exports = function(config) {
 
   config.addPlugin(EleventyRenderPlugin);
 
-  config.addCollection("talks",(collection) => {
-    return collection.getFilteredByGlob("./src/content/talks/*.md");
-  });
-
-  config.addCollection("sponsor_packages",(collection) => {
-    return collection.getFilteredByGlob("./src/content/sponsor_packages/*.md");
+  config.addCollection("works",(collection) => {
+    return collection.getFilteredByGlob("./src/content/works/*.md");
   });
 
   /*
