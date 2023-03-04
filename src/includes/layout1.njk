@@ -6,7 +6,7 @@
         <title>Incode</title>
 
         <!-- Bootstrap Icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
@@ -35,26 +35,35 @@
             <footer class="footer__main px3 my3 clearfix">
                 <div class="max-width-6 mx-auto my3">
                     <div class="col col-12 md-col-12" style="text-align: center;">
-                        <div class="footer__info wysiwyg" style="display: inline;">
-                            <p>©2007-2023 <strong>Incode Snc</strong> di Bravo L. e Molinari A.Iscr. Reg. Imprese di MN, Cod Fisc. e P.Iva 01357300191</p>
-                            <p><a href="/aiuti-stato">Informativa ai sensi ex art. 1, comma 125,&nbsp; legge 4 agosto 2017 n. 124, relativamente a obbligo di pubblicità relativamente agli aiuti di stato ricevuti dalle aziende</a></p>
-                        </div>
-                        <div class="footer__info wysiwyg" style="display: inline;">
-                            <iframe class="iubenda-ibadge" scrolling="no" frameborder="0" allowtransparency="true" style="width:115px; height:22px;" title="Privacy Policy" src="javascript:window[&quot;contents&quot;]"></iframe> <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-                        </div>
-                    </div>
+                    <div class="footer__info wysiwyg" style="display: inline;">
+                <p>©2007-2023 <strong>Incode Snc</strong> di Bravo L. e Molinari A.Iscr. Reg. Imprese di MN, Cod Fisc. e P.Iva 01357300191</p>
+                <p><a href="/aiuti-stato">Informativa ai sensi ex art. 1, comma 125,&nbsp; legge 4 agosto 2017 n. 124, relativamente a obbligo di pubblicità relativamente agli aiuti di stato ricevuti dalle aziende</a></p>
+                </div>      <div class="footer__info wysiwyg" style="display: inline;">
+                <iframe class="iubenda-ibadge" scrolling="no" frameborder="0" allowtransparency="true" style="width:115px; height:22px;" title="Privacy Policy" src="javascript:window[&quot;contents&quot;]"></iframe> <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                </div>    </div>
                     <div class="col col-12 md-col-6">
-                    {# <ul class="block block--social list-reset py1 m0 align-middle center">          
-                        <li class="inline-block mx1"><a title="Facebook" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/facebook.svg'/></a></li>
-                        <li class="inline-block mx1"><a title="Youtube" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/twitter.svg'/></a></li>
-                        <li class="inline-block mx1"><a title="Instagram" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/instagram.svg'/></a></li>
-                        <li class="inline-block mx1"><a title="LinkedIn" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/linkedin.svg'/></a></li>
-                        <li class="inline-block mx1"><a title="Vimeo" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/vimeo.svg'/></a></li>
-                    </ul> #}
-                    </div>
+                        </div>
                 </div>
             </footer>
         </main>
+
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/it_IT/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="126721130679991"
+        logged_in_greeting="Ciao! Come possiamo aiutarti?"
+        logged_out_greeting="Alla prossima!">
+        </div>
+
         <script src="{{ '/js/main.js' | url }}"></script>
     </body>
 </html>
