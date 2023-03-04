@@ -12,36 +12,49 @@
         <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     </head>
     <body>
-        <!-- Main container -->
-        <div id="primary" class="content-area max-width-5 mx-auto px2">
-            {{ content | safe }}
-        </div>
-
-
-
-        <footer class="footer__main px3 my3 clearfix">
-            <div class="max-width-6 mx-auto my3">
-                <div class="col col-12 md-col-12" style="text-align: center;">
-                    <div class="footer__info wysiwyg" style="display: inline;">
-                        <p>©2007-2023 <strong>Incode Snc</strong> di Bravo L. e Molinari A.Iscr. Reg. Imprese di MN, Cod Fisc. e P.Iva 01357300191</p>
-                        <p><a href="https://www.incode.it/aiuti-stato">Informativa ai sensi ex art. 1, comma 125,&nbsp; legge 4 agosto 2017 n. 124, relativamente a obbligo di pubblicità relativamente agli aiuti di stato ricevuti dalle aziende</a></p>
+        <main id="main" class="site-main overflow-hidden" role="main">
+            <header id="main-header" class="nav nav--main mt3 md-mt4 fixed top-0 right-0 left-0 px3">
+                <div class="max-width-6 mx-auto flex items-center">
+                    <div class="nav__logo-wrapper col col-6">
+                        <a class="nav__logo" href="/" rel="home"><img src="/assets/logo.svg"></a>
                     </div>
-                    <div class="footer__info wysiwyg" style="display: inline;">
-                        <iframe class="iubenda-ibadge" scrolling="no" frameborder="0" allowtransparency="true" style="width:115px; height:22px;" title="Privacy Policy" src="javascript:window[&quot;contents&quot;]"></iframe> <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-                    </div>
+                    <nav class="nav__menu col col-6 right-align">
+                        <div class="menu-main-menu-container">
+                            <ul id="primary-menu" class="menu">
+                                <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-38"><a href="/#latest-works" aria-current="page">Works</a></li>
+                                <li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-39"><a href="/#we-make-things" aria-current="page">About</a></li>
+                            </ul>
+                        </div>    
+                    </nav>
                 </div>
-                <div class="col col-12 md-col-6">
-                {# <ul class="block block--social list-reset py1 m0 align-middle center">          
-                    <li class="inline-block mx1"><a title="Facebook" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/facebook.svg'/></a></li>
-                    <li class="inline-block mx1"><a title="Youtube" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/twitter.svg'/></a></li>
-                    <li class="inline-block mx1"><a title="Instagram" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/instagram.svg'/></a></li>
-                    <li class="inline-block mx1"><a title="LinkedIn" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/linkedin.svg'/></a></li>
-                    <li class="inline-block mx1"><a title="Vimeo" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/vimeo.svg'/></a></li>
-                </ul> #}
-                </div>
+            </header>
+
+            <div id="primary" class="content-area max-width-5 mx-auto px2">
+                {{ content | safe }}
             </div>
-        </footer>
-
+            <footer class="footer__main px3 my3 clearfix">
+                <div class="max-width-6 mx-auto my3">
+                    <div class="col col-12 md-col-12" style="text-align: center;">
+                        <div class="footer__info wysiwyg" style="display: inline;">
+                            <p>©2007-2023 <strong>Incode Snc</strong> di Bravo L. e Molinari A.Iscr. Reg. Imprese di MN, Cod Fisc. e P.Iva 01357300191</p>
+                            <p><a href="/aiuti-stato">Informativa ai sensi ex art. 1, comma 125,&nbsp; legge 4 agosto 2017 n. 124, relativamente a obbligo di pubblicità relativamente agli aiuti di stato ricevuti dalle aziende</a></p>
+                        </div>
+                        <div class="footer__info wysiwyg" style="display: inline;">
+                            <iframe class="iubenda-ibadge" scrolling="no" frameborder="0" allowtransparency="true" style="width:115px; height:22px;" title="Privacy Policy" src="javascript:window[&quot;contents&quot;]"></iframe> <script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                        </div>
+                    </div>
+                    <div class="col col-12 md-col-6">
+                    {# <ul class="block block--social list-reset py1 m0 align-middle center">          
+                        <li class="inline-block mx1"><a title="Facebook" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/facebook.svg'/></a></li>
+                        <li class="inline-block mx1"><a title="Youtube" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/twitter.svg'/></a></li>
+                        <li class="inline-block mx1"><a title="Instagram" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/instagram.svg'/></a></li>
+                        <li class="inline-block mx1"><a title="LinkedIn" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/linkedin.svg'/></a></li>
+                        <li class="inline-block mx1"><a title="Vimeo" target="_blank" href="#"><img width="30" height="30" src='/assets/icons/vimeo.svg'/></a></li>
+                    </ul> #}
+                    </div>
+                </div>
+            </footer>
+        </main>
         <script src="{{ '/js/main.js' | url }}"></script>
     </body>
 </html>
