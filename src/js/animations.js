@@ -17,7 +17,7 @@ export const animateElements = () => {
     backDelay: 2500,
   }
 
-  var typed = new Typed(".hero__typewrite", options);
+  if(document.getElementsByName(".hero__typewrite")[0]) new Typed(".hero__typewrite", options);
 
   if ($('#hero').length > 0 ) {
     var controller = new Controller();
