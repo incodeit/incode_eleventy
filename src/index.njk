@@ -7,90 +7,93 @@ permalink: '/'
 <section id="hero" class="clearfix">
   <header class="hero__header px3">
     <h1 class="hero__title mb2">
-      <span><span class="hero__title--start">You think.</span> <span class="hero__typewrite"></span></span>
+      <span>
+        <span class="hero__title--start">You think.</span>
+        <span class="hero__typewrite"></span>
+      </span>
     </h1>
-
-  <div class="hero__content mx-auto">
-      <p class="p1">We are an <strong>Italian</strong> <strong>creative</strong> <strong>studio</strong> specialising in <b>full-stack development</b>. Our clients are the main priority, but we <strong>love</strong> <strong>working</strong> <strong>with</strong> <strong>them</strong>, rather than for them.</p>
+    <div class="hero__content mx-auto">
+      <p class="p1">We are an
+        <strong>Italian</strong>
+        <strong>creative</strong>
+        <strong>studio</strong>
+        specialising in
+        <b>full-stack development</b>. Our clients are the main priority, but we
+        <strong>love</strong>
+        <strong>working</strong>
+        <strong>with</strong>
+        <strong>them</strong>, rather than for them.</p>
     </div>
-
     <div class="hero__cta mt3 sm-mt4">
       <a class="button" href="mailto:info@incode.it">Contact us</a>
     </div>
   </header>
-
   <div class="hero__toggle"></div>
 </section>
 
-
-
 <section id="latest-works" class="clearfix">
-    <header class="section__header mt4 px2 md-px3">
-      <h2 class="section__title mb2 col-12 md-col-10 mx-auto">
-        <span>Idea + Technology + Lean Design</span>
-      </h2>
-    </header>
-    {%- for work in collections.works -%}
-      <article class="work col-12 px0 md-px3 relative clearfix my4 sm-my4">
-        <div class="work__image--wrapper col-10 mx-auto relative">
-          <a href="{{ work.data.link }}" target="_blank"><img class="work__image lazyload fit" src="{{ work.data.image }}" alt="{{ work.data.title }}"></a>
-
-          <div class="work__image--wrapper-ipad">
-            <img class="work__image--background work__image--ipad absolute lazyload fit" src="{{ work.data.image_ipad }}" alt="{{ work.data.title }}">
-            <img class="work__image--mask lazyload fit" src="/assets/ipad.png" alt="{{ work.data.title }}">
-          </div>
-
-          <div class="work__image--wrapper-iphone">
-            <img class="work__image--background work__image--iphone absolute lazyload fit" src="{{ work.data.image_iphone }}" alt="{{ work.data.title }}">
-            <img class="work__image--mask lazyload fit" src="/assets/iphone.png" alt="{{ work.data.title }}">
-          </div>
+  <header class="section__header mt4 px2 md-px3">
+    <h2 class="section__title mb2 col-12 md-col-10 mx-auto">
+      <span>Idea + Technology + Lean Design</span>
+    </h2>
+  </header>
+  {%- for work in collections.works -%}
+    <article class="work col-12 px0 md-px3 relative clearfix my4 sm-my4">
+      <div class="work__image--wrapper col-10 mx-auto relative">
+        <a href="{{ work.data.link }}" target="_blank">
+          <img class="work__image lazyload fit" src="{{ work.data.image }}" alt="{{ work.data.title }}">
+        </a>
+        <div class="work__image--wrapper-ipad">
+          <img class="work__image--background work__image--ipad absolute lazyload fit" src="{{ work.data.image_ipad }}" alt="{{ work.data.title }}">
+          <img class="work__image--mask lazyload fit" src="/assets/ipad.png" alt="{{ work.data.title }}">
         </div>
-
-        <header class="work__header mt2 mb2 md-mb4 col-10 md-col-7 mx-auto center">
-          <h1 class="work__title">{{ work.data.title }}</h1>
-          <span class="work__subtitle">{{ work.data.subtitle }}</span>
-        </header>
-      </article>
-    {%- endfor -%}
+        <div class="work__image--wrapper-iphone">
+          <img class="work__image--background work__image--iphone absolute lazyload fit" src="{{ work.data.image_iphone }}" alt="{{ work.data.title }}">
+          <img class="work__image--mask lazyload fit" src="/assets/iphone.png" alt="{{ work.data.title }}">
+        </div>
+      </div>
+      <header class="work__header mt2 mb2 md-mb4 col-10 md-col-7 mx-auto center">
+        <h1 class="work__title">{{ work.data.title }}</h1>
+        <span class="work__subtitle">{{ work.data.subtitle }}</span>
+      </header>
+    </article>
+  {%- endfor -%}
 </section>
 
 <section id="we-make-things" class="clearfix">
-    <header class="section__header mt4 md-px3">
-      <h2 class="section__title col-12 md-col-10 px2 mb2 md-px0 mx-auto" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-        <span>We make things.</span>
-      </h2>
-    </header>
-
-      <article class="section__content col-12 md-px3 relative clearfix my4">
-        <div class="col-12 px2 md-px0 md-col-10 mx-auto relative">
-
-          <div class="col col-12 lg-col-6">
-            <h3>
-              Tell us your idea.<br>
-              If it exists, we’ll make it for you.<br>
-              If it doesn’t, we’ll make it up.
-            </h3>
-          </div>
-
-          <div class="col col-12 lg-col-6 pt3 mt3 md-mt0 md-pt0 md-pl3">
-            <h3>Content management, E-commerce</h3>
-            <p>WordPress, Drupal, Prestashop</p>
-            <h3>Platforms and custom projects</h3>
-            <p>Ruby/Rails, platform architecture and system integration</p>
-            <h3>UI, UX, UXA</h3>
-            <p>Design, evaluation and assessment,&nbsp;consulting</p>
-          </div>
-        </div>
-      </article>
+  <header class="section__header mt4 md-px3">
+    <h2 class="section__title col-12 md-col-10 px2 mb2 md-px0 mx-auto" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+      <span>We make things.</span>
+    </h2>
+  </header>
+  <article class="section__content col-12 md-px3 relative clearfix my4">
+    <div class="col-12 px2 md-px0 md-col-10 mx-auto relative">
+     <div class="col col-12 lg-col-6 mb2">
+        <h3>
+          Tell us your idea.<br>
+          If it exists, we’ll make it for you.<br>
+           If it doesn’t, we’ll make it up.
+        </h3>
+      </div>
+      <div class="col col-12 lg-col-6">
+        <h3>Content management, E-commerce</h3>
+        <p>WordPress, Drupal, Prestashop</p>
+        <h3>Platforms and custom projects</h3>
+        <p>Ruby/Rails, platform architecture and system integration</p>
+        <h3>UI, UX, UXA</h3>
+        <p>Design, evaluation and assessment,&nbsp;consulting</p>
+      </div>
+    </div>
+  </article>
 </section>
 
 <section id="our-clients" class="clearfix">
-    <header class="section__header mt4 md-px3 center">
-      <div class="col-12 md-col-10 px2 md-px0 mx-auto center">
-        <div class="section__title mb2 center" style="transform: translate(0%, 0.0707608%) translate3d(0px, 0px, 0px);">
-          We’ve worked as developer, web designer or UX analyst for various agencies and their clients like:        </div>
-
-          <img class="section__logos mt2 mb4 fit" src="/assets/our_clients.png" alt="">
+  <header class="section__header mt4 md-px3 center">
+    <div class="col-12 md-col-10 px2 md-px0 mx-auto center">
+      <div class="section__title mb2 center" style="transform: translate(0%, 0.0707608%) translate3d(0px, 0px, 0px);">
+        We’ve worked as developer, web designer or UX analyst for various agencies and their clients like:
       </div>
-    </header>
+      <img class="section__logos mt2 mb4 fit" src="/assets/our_clients.png" alt="">
+    </div>
+  </header>
 </section>
