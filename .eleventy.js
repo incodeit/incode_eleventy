@@ -15,6 +15,8 @@ module.exports = function(config) {
     return collection.getFilteredByGlob("./src/content/works/*.md");
   });
 
+ config.addShortcode("year_current", () => `${new Date().getFullYear()}`);
+
   /*
   let options = {
     html: true,
