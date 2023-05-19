@@ -11,7 +11,16 @@ module.exports = function(config) {
   config.addPlugin(EleventyRenderPlugin);
 
   config.addCollection("works",(collection) => {
-    return collection.getFilteredByGlob("./src/content/works/*.md");
+    return collection.getFilteredByGlob("./src/content/works/*.md")
+    .map(element => {
+      element.data = Object.assign({ // default
+        ord: 0,
+        visible: true,
+      }, element.data);
+      return element;
+    })
+    .filter(element => element.data.visible)
+    .sort((a, b) => a.data.ord - b.data.ord)
   });
 
  config.addShortcode("year_current", () => `${new Date().getFullYear()}`);
