@@ -5,5 +5,6 @@ portfolio_link: get_sub_field('portfolio_link');
 image: assets/works/pem-desktop.png
 image_ipad: assets/works/pem-ipad.png
 image_iphone: assets/works/pem-iphone.png
+ord: 7
 ---
 

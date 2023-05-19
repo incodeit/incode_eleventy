@@ -1,5 +1,4 @@
 // inspired by https://github.com/webpixels/bootstrap-starter-kit
-
 const markdownIt = require("markdown-it");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
