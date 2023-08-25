@@ -20,7 +20,7 @@ module.exports = function(config) {
       return element;
     })
     .filter(element => element.data.visible)
-    .sort((a, b) => a.data.ord - b.data.ord)
+    .sort((a, b) => b.data.ord - a.data.ord)
   });
 
  config.addShortcode("year_current", () => `${new Date().getFullYear()}`);
