@@ -57,7 +57,6 @@
     "scrollmagic": "^2.0.8",
     "scrollmagic-plugin-gsap": "^1.0.4",
     "slick-carousel": "^1.8.1",
-    "typed": "^10.0.0-beta.2",
     "typed.js": "^2.0.12",
     "vanilla-lazyload": "^17.8.3"
   }
