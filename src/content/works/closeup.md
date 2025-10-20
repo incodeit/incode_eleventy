@@ -6,5 +6,6 @@ image: assets/works/closeup/closeup_desktop.png
 image_ipad: assets/works/closeup/closeup_ipad.png
 image_iphone: assets/works/closeup/closeup_mobile.png
 ord: 12
+visible: false
 ---
 

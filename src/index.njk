@@ -5,7 +5,7 @@ permalink: '/'
 ---
 
 <section id="hero" class="clearfix">
-  <header class="hero__header px3">
+  <header class="hero__header px2">
     <h1 class="hero__title mb2">
       <span>
         <span class="hero__title--start">You think.</span>
@@ -32,30 +32,28 @@ permalink: '/'
 </section>
 
 <section id="latest-works" class="clearfix">
-  <header class="section__header mt4 px2 md-px3">
-    <h2 class="section__title mb2 col-12 md-col-10 mx-auto">
+  <header class="section__header mt4 px2">
+    <h2 class="section__title mb2 col-12 md-col-12 mx-auto">
       <span>Idea + Technology + Lean Design</span>
     </h2>
   </header>
   {%- for work in collections.works -%}
-    <article class="work col-12 px0 md-px3 relative clearfix my4 sm-my4">
-      <div class="work__image--wrapper col-10 mx-auto relative">
-        <a href="{{ work.data.portfolio_link }}" target="_blank">
-          <img class="work__image lazyload fit" src="{{ work.data.image }}" alt="{{ work.data.title }}">
-        </a>
-        <div class="work__image--wrapper-ipad">
-          <img class="work__image--background work__image--ipad absolute lazyload fit" src="{{ work.data.image_ipad }}" alt="{{ work.data.title }}">
-          <img class="work__image--mask lazyload fit" src="/assets/ipad.png" alt="{{ work.data.title }}">
-        </div>
-        <div class="work__image--wrapper-iphone">
-          <img class="work__image--background work__image--iphone absolute lazyload fit" src="{{ work.data.image_iphone }}" alt="{{ work.data.title }}">
-          <img class="work__image--mask lazyload fit" src="/assets/iphone.png" alt="{{ work.data.title }}">
-        </div>
-      </div>
-      <header class="work__header mt2 mb2 md-mb4 col-10 md-col-7 mx-auto center">
+    <article class="work col-12 px2 relative clearfix my4 sm-my4">
+       <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
         <h1 class="work__title">{{ work.data.title }}</h1>
         <span class="work__subtitle">{{ work.data.subtitle }}</span>
       </header>
+      <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <a href="{{ work.data.portfolio_link }}" target="_blank">
+          <img class="work__image fit" src="{{ work.data.image }}" alt="{{ work.data.title }}" loading="lazy">
+        </a>
+      </div>
+       <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <a href="{{ work.data.portfolio_link }}" target="_blank">
+          <img class="work__image fit" src="{{ work.data.image_iphone }}" alt="{{ work.data.title }}" loading="lazy">
+        </a>
+      </div>
+     
     </article>
   {%- endfor -%}
 </section>
@@ -93,7 +91,7 @@ permalink: '/'
       <div class="section__title mb2 center" style="transform: translate(0%, 0.0707608%) translate3d(0px, 0px, 0px);">
         We’ve worked as developer, web designer or UX analyst for various agencies and their clients like:
       </div>
-      <img class="section__logos mt2 mb4 fit" src="/assets/our_clients.png" alt="Our Clients">
+      <img class="section__logos mt2 mb4 fit hide" src="" alt="Our Clients">
     </div>
   </header>
 </section>

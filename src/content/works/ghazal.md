@@ -6,5 +6,6 @@ image: assets/works/ghazal/ghazal-desktop.jpg
 image_ipad: assets/works/ghazal/ghazal-tablet.jpg
 image_iphone: assets/works/ghazal/ghazal-mobile.jpg
 ord: 18
+visible: false
 ---
 

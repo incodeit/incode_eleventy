@@ -6,4 +6,5 @@ image: assets/works/spin360/spin-desktop.jpg
 image_ipad: assets/works/spin360/spin-tablet.jpg
 image_iphone: assets/works/spin360/spin-mobile.jpg
 ord: 14
+visible: false
 ---
