@@ -1,5 +1,5 @@
 ---
-title: Fileni (time sharing multietnico)
+title: Fileni, time sharing multietnico
 subtitle: Developed for Fileni.
 portfolio_link: https://timesharingmultietnico.it
 image: assets/works/fileni/fileni_desktop.webp
