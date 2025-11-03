@@ -1,6 +1,6 @@
 html {
   font-size: 15px; // 1rem
-  background: #23202E;
+  background: #171921;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
   text-rendering:optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #23202E url(../assets/page_background.jpg) top center;
+  background: #171921;
   background-size: 100%;
 
   min-height: 100vh;
@@ -28,10 +28,8 @@ body {
     right: 0;
     height: 10vw;
 
-    background: linear-gradient(to bottom, rgba(35,32,46,1) 0%,rgba(35,32,46,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23202e', endColorstr='#0023202e',GradientType=0 );
+    background: linear-gradient(180deg, #171921 0%, rgba(23, 25, 33, 0.00) 100%);
     z-index: 999;
-
     pointer-events: none;
 
     @media #{$c-breakpoint-smartphone-lg} {
@@ -78,7 +76,7 @@ h2 {
   font-size: 2.6rem;
 
   @media #{$c-breakpoint-smartphone-lg} {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     line-height: 1.2;
   }
 }
@@ -103,11 +101,18 @@ img {
 }
 
 .max-width-5 {
-  max-width: 78rem;
+  max-width: 88%;
+
+  @media (max-width: 480px) {
+    max-width: 100%;
+  }
 }
 
 .max-width-6 {
-  max-width: 86rem;
+  max-width: 96%;
+   @media (max-width: 480px) {
+    max-width: 100%;
+  }
 }
 
 #main > .container {
@@ -124,16 +129,7 @@ img {
 .section {
   &__title {
     position: relative;
-    &:after {
-      content: " ";
-      position: absolute;
-      top: -2rem;
-      display: block;
-      width: 3rem;
-      height: 4px;
-      border-radius: 4px;
-      background: rgba(255,255,255,0.3);
-    }
+   
 
     &.center {
       &:after {
@@ -155,30 +151,13 @@ img {
   }
 
   &__image {
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+  
     &--mask {
       position: relative;
       z-index: 10;
       overflow: hidden;
     }
 
-    &--ipad {
-      padding-top: 6%;
-      padding-left: 6%;
-      width: 94%;
-      position: absolute;
-      top: 0;
-
-    }
-
-    &--iphone {
-      padding-top: 19%;
-      padding-left: 5%;
-      width: 97%;
-      position: absolute;
-      top: 0;
-
-    }
 
     &--wrapper{
       &-ipad {
@@ -206,11 +185,6 @@ img {
           right: -8%;
 
         }
-
-      }
-      &-ipad,
-      &-iphone {
-        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
       }
     }
   }
