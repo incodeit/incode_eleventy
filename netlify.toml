@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/privacy-policy"
+  to = "https://www.iubenda.com/privacy-policy/39654979"
+  status = 301
+
+[[redirects]]
+  from = "/cookie-policy"
+  to = "https://www.iubenda.com/privacy-policy/39654979/cookie-policy"
+  status = 301
+
+
