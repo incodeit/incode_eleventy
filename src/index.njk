@@ -37,25 +37,26 @@ permalink: '/'
       <span>Idea + Technology + Lean Design</span>
     </h2>
   </header>
-  {%- for work in collections.works -%}
-    <article class="work col-12 px2 relative clearfix my4 sm-my4">
-       <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-        <h1 class="work__title">{{ work.data.title }}</h1>
-        <span class="work__subtitle">{{ work.data.subtitle }}</span>
-      </header>
-      <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
-        <a href="{{ work.data.portfolio_link }}" target="_blank">
-          <img class="work__image fit" src="{{ work.data.image }}" alt="{{ work.data.title }}" loading="lazy">
-        </a>
-      </div>
-       <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
-        <a href="{{ work.data.portfolio_link }}" target="_blank">
-          <img class="work__image fit" src="{{ work.data.image_iphone }}" alt="{{ work.data.title }}" loading="lazy">
-        </a>
-      </div>
-     
-    </article>
-  {%- endfor -%}
+  <div id="works-container">
+    {%- for work in collections.works -%}
+      <article class="work col-12 px2 relative clearfix my4 sm-my4">
+        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
+          <h1 class="work__title">{{ work.data.title }}</h1>
+          <span class="work__subtitle">{{ work.data.subtitle }}</span>
+        </header>
+        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+          <a href="{{ work.data.portfolio_link }}" target="_blank">
+            <img class="work__image fit" src="{{ work.data.image }}" alt="{{ work.data.title }}" loading="lazy">
+          </a>
+        </div>
+        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+          <a href="{{ work.data.portfolio_link }}" target="_blank">
+            <img class="work__image fit" src="{{ work.data.image_iphone }}" alt="{{ work.data.title }}" loading="lazy">
+          </a>
+        </div>
+      </article>
+    {%- endfor -%}
+  </div>
 </section>
 
 <section id="we-make-things" class="clearfix">
