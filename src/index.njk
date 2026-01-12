@@ -32,14 +32,15 @@ permalink: '/'
 </section>
 
 <section id="latest-works" class="clearfix">
-  <header class="section__header mt4 px2">
-    <h2 class="section__title mb2 col-12 md-col-12 mx-auto center">
+  <header class="section__header mt4 px2 center">
+    <h2 class="section__title mb4">
       <span>Idea + Technology + Lean Design</span>
     </h2>
+    <p class="section__description m0">Here's a random list of our works, <a href="javascript:location.reload()">refresh the page</a> to get more</a></p>
   </header>
   <div id="works-container">
     {%- for work in collections.works -%}
-      <article class="work col-12 px2 relative clearfix my4 sm-my4">
+      <article class="work col-12 px2 relative clearfix mb4">
         <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
           <h1 class="work__title">{{ work.data.title }}</h1>
           <span class="work__subtitle">{{ work.data.subtitle }}</span>
