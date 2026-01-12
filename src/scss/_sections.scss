@@ -68,6 +68,10 @@
 #latest-works {
   .section__description {
     font-size: 1.5rem;
+    
+    @media #{$c-breakpoint-smartphone-lg} {
+      font-size: 1.25rem;
+    }
 
     a {
       color: #FFF;
