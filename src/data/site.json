@@ -24,12 +24,16 @@
     "WooCommerce",
     "Node.js",
     "Vue.js",
-    "Astro"
+    "Astro",
+    "Eleventy",
+    "Netlify"
   ],
   "services": [
     "UI and UX design",
     "Full-stack development",
     "CMS and e-commerce",
+    "JAMstack and static-site development",
+    "Headless CMS and API-first content",
     "User research, personas and use cases",
     "Technical architecture and tech leading",
     "Corporate websites and editorial portals",
@@ -40,6 +44,7 @@
     "Systems and API integration",
     "B2B and B2C shops, product configurators",
     "Heuristic and moderated testing with real users",
+    "Continuous deployment and hosting on Netlify",
     "Cloud, deployment and continuous maintenance",
     "Loyalty, pricing rules and ERP integration"
   ]
