@@ -15,5 +15,32 @@
     "region": "MN",
     "country": "IT"
   },
-  "twitter": ""
+  "twitter": "",
+  "technologies": [
+    "WordPress",
+    "Shopify",
+    "Ruby on Rails",
+    "Drupal",
+    "WooCommerce",
+    "Node.js",
+    "Vue.js",
+    "Astro"
+  ],
+  "services": [
+    "UI and UX design",
+    "Full-stack development",
+    "CMS and e-commerce",
+    "User research, personas and use cases",
+    "Technical architecture and tech leading",
+    "Corporate websites and editorial portals",
+    "Information architecture and wireframing",
+    "Custom projects on Ruby on Rails and Node",
+    "Multisite, multilingual and multi-vendor platforms",
+    "UI design for web, apps and smart TV",
+    "Systems and API integration",
+    "B2B and B2C shops, product configurators",
+    "Heuristic and moderated testing with real users",
+    "Cloud, deployment and continuous maintenance",
+    "Loyalty, pricing rules and ERP integration"
+  ]
 }

@@ -9,11 +9,14 @@ eleventyExcludeFromCollections: true
 > software and UX/UI design. Tagline: "You think. We build." Incode works with
 > its clients rather than just for them.
 
+## Technologies
+
+{% for t in site.technologies %}{{ t }}{% if not loop.last %}, {% endif %}{% endfor %}
+
 ## Services
 
-- **Websites & E-commerce**: WordPress, WooCommerce, Drupal, Shopify
-- **Custom projects**: Ruby on Rails, Node.js, Vue.js, architecture and integration
-- **UX / UI**: design, evaluation, assessment and consulting
+{% for s in site.services %}- {{ s }}
+{% endfor %}
 
 ## Contact
 

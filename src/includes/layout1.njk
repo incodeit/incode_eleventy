@@ -52,13 +52,23 @@
           "email": "{{ site.email }}",
           "foundingDate": "{{ site.founded }}",
           "vatID": "{{ site.vatId }}",
-          "knowsAbout": ["Web development", "Full-stack development", "E-commerce", "UX design", "UI design", "Ruby on Rails", "Node.js", "Vue.js", "WordPress", "Shopify"],
+          "knowsAbout": [{% for t in site.technologies %}"{{ t }}"{% if not loop.last %}, {% endif %}{% endfor %}, {% for s in site.services %}"{{ s }}"{% if not loop.last %}, {% endif %}{% endfor %}],
           "areaServed": "Worldwide",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "{{ site.address.locality }}",
             "addressRegion": "{{ site.address.region }}",
             "addressCountry": "{{ site.address.country }}"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services",
+            "itemListElement": [{% for s in site.services %}
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "{{ s }}" }
+              }{% if not loop.last %},{% endif %}{% endfor %}
+            ]
           }
         }
         </script>
