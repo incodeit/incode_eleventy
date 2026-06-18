@@ -1,0 +1,19 @@
+{
+  "name": "Incode",
+  "legalName": "Incode Snc",
+  "url": "https://www.incode.it",
+  "title": "Incode – You think. We build.",
+  "description": "Incode is an Italian creative studio specialising in full-stack web development, e-commerce, custom software and UX/UI design. You think. We build.",
+  "locale": "en",
+  "email": "info@incode.it",
+  "image": "/assets/og-image.jpg",
+  "logo": "/assets/logo.svg",
+  "founded": "2007",
+  "vatId": "IT01357300191",
+  "address": {
+    "locality": "Mantova",
+    "region": "MN",
+    "country": "IT"
+  },
+  "twitter": ""
+}

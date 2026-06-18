@@ -1,6 +1,8 @@
 ---
 layout: layout1
 title: Home
+seoTitle: 'Incode – Italian creative studio for web development & UX/UI'
+description: 'Incode is an Italian creative studio specialising in full-stack web development, e-commerce, custom software and UX/UI design. We work with our clients, not just for them.'
 permalink: '/'
 ---
 
@@ -42,7 +44,7 @@ permalink: '/'
     {%- for work in collections.works -%}
       <article class="work col-12 px2 relative clearfix mb4">
         <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">{{ work.data.title }}</h1>
+          <h2 class="work__title">{{ work.data.title }}</h2>
           <span class="work__subtitle">{{ work.data.subtitle }}</span>
         </header>
         <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
