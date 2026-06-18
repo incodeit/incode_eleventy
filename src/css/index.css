@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ *
+ * Base — restore element styling that Tailwind's preflight removes,
+ * preserving the previous (basscss) look. Root stays at 15px so every
+ * rem value renders identically to before.
+ * ------------------------------------------------------------------ */
+@layer base {
+  html {
+    font-size: 15px;
+    background: #171921;
+  }
+
+  body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.7);
+    background: #171921;
+    min-height: 100vh;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Top fade overlay */
+  body::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vw;
+    background: linear-gradient(180deg, #171921 0%, rgba(23, 25, 33, 0) 100%);
+    z-index: 999;
+    pointer-events: none;
+  }
+  @media (max-width: 650px) {
+    body::before { height: 50vw; }
+  }
+
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+  h2 { font-size: 2.6rem; }
+  @media (max-width: 650px) {
+    h2 { font-size: 1.8rem; line-height: 1.2; }
+  }
+
+  h3 { font-size: 1.8rem; font-weight: 400; }
+  @media (max-width: 650px) {
+    h3 { font-size: 1.4rem; line-height: 1.2; }
+  }
+
+  /* Content lists keep bullets (preflight strips them) */
+  ul { list-style: disc; padding-left: 40px; }
+
+  img { vertical-align: top; }
+}
+
+/* ------------------------------------------------------------------ *
+ * Components — styles that cannot be expressed as utilities
+ * (pseudo-elements, gradients, JS-generated nodes, markdown output).
+ * Kept as plain CSS so they are never purged.
+ * ------------------------------------------------------------------ */
+
+/* CTA button */
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(-163deg, #f55648 0%, #d02868 89%);
+  box-shadow: 0 3px 34px 0 rgba(0, 0, 0, 0.30);
+  border-radius: 100px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  will-change: auto;
+}
+.button:hover {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.20);
+  text-decoration: none;
+}
+
+/* Hero scroll indicator */
+.hero__toggle {
+  width: 2px;
+  height: 3rem;
+  position: absolute;
+  bottom: 3rem;
+  left: calc(50% - 1px);
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 0;
+  animation: hero-bounce 4s infinite;
+}
+@keyframes hero-bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-20px); }
+}
+
+/* Typewriter cursor (injected by typed.js) */
+.typed-cursor {
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: normal;
+}
+
+/* object-fit-images polyfill hook */
+.cover-image {
+  object-fit: cover;
+  object-position: center;
+  font-family: 'object-fit: cover; object-position: center;';
+}
+
+/* Footer policy links (iubenda) */
+.footer__info a {
+  color: #fff;
+  height: 0 !important;
+  width: auto !important;
+}
+
+/* Legal page (markdown-generated content) */
+.page__content a { color: #fff; }
+.page__content table,
+.page__content th,
+.page__content td {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-collapse: collapse;
+}
+.page__content th,
+.page__content td { padding: 0.25rem; }
+
+/* iubenda US privacy widget */
+.iub__us-widget { display: none !important; }

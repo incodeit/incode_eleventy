@@ -1,5 +1,3 @@
-import $ from 'jquery'
-import setupSlideshow from './components/slideshow'
 import objectFitImages from 'object-fit-images'
 import LazyLoad from "vanilla-lazyload"
 import Typed from 'typed.js';
@@ -20,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const coverImages = document.querySelectorAll('.cover-image')
   objectFitImages(coverImages)
-  setupSlideshow('#full-width-slideshow .slides')
 
   // Shuffle works
   const container = document.getElementById('works-container');

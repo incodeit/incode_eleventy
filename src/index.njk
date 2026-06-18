@@ -6,16 +6,16 @@ description: 'Incode is an Italian creative studio specialising in full-stack we
 permalink: '/'
 ---
 
-<section id="hero" class="clearfix">
-  <header class="hero__header px2">
-    <h1 class="hero__title mb2">
+<section id="hero" class="min-h-screen">
+  <header class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full px-4">
+    <h1 class="text-[6rem] whitespace-nowrap max-[990px]:text-[4rem] max-[990px]:leading-[1.2] max-[650px]:text-[2.8rem] max-[650px]:leading-[1.2] max-[650px]:whitespace-normal mb-4">
       <span>
-        <span class="hero__title--start">You think.</span>
+        <span class="max-[650px]:block">You think.</span>
         <span class="hero__typewrite"></span>
       </span>
     </h1>
-    <div class="hero__content mx-auto">
-      <p class="p1">We are an
+    <div class="text-[1.8rem] max-w-[54rem] max-[650px]:text-[1.4rem] mx-auto">
+      <p class="m-0">We are an
         <strong>Italian</strong>
         <strong>creative</strong>
         <strong>studio</strong>
@@ -26,35 +26,35 @@ permalink: '/'
         <strong>with</strong>
         <strong>them</strong>, rather than for them.</p>
     </div>
-    <div class="hero__cta mt3 sm-mt4">
+    <div class="mt-8 sm:mt-16">
       <a class="button" href="mailto:info@incode.it">Contact us</a>
     </div>
   </header>
   <div class="hero__toggle"></div>
 </section>
 
-<section id="latest-works" class="clearfix">
-  <header class="section__header mt4 px2 center">
-    <h2 class="section__title mb4">
+<section id="latest-works">
+  <header class="mt-16 px-4 text-center">
+    <h2 class="relative mb-16">
       <span>Idea + Technology + Lean Design</span>
     </h2>
-    <p class="section__description m0">Here's a random list of our works, <a href="javascript:location.reload()">refresh the page</a> to get more</a></p>
+    <p class="text-[1.5rem] max-[650px]:text-[1.25rem] m-0">Here's a random list of our works, <a class="text-white" href="javascript:location.reload()">refresh the page</a> to get more</a></p>
   </header>
   <div id="works-container">
     {%- for work in collections.works -%}
-      <article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h2 class="work__title">{{ work.data.title }}</h2>
-          <span class="work__subtitle">{{ work.data.subtitle }}</span>
+      <article class="work w-full px-4 relative mb-16">
+        <header class="mt-16 mb-4 w-full mx-auto">
+          <h2 class="text-[1.8rem] font-normal max-[650px]:text-[1.4rem]">{{ work.data.title }}</h2>
+          <span>{{ work.data.subtitle }}</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class="w-full mx-auto relative hidden md:block">
           <a href="{{ work.data.portfolio_link }}" target="_blank">
-            <img class="work__image fit" src="{{ work.data.image }}" alt="{{ work.data.title }}" loading="lazy">
+            <img class="max-w-full" src="{{ work.data.image }}" alt="{{ work.data.title }}" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class="w-full mx-auto relative block md:hidden">
           <a href="{{ work.data.portfolio_link }}" target="_blank">
-            <img class="work__image fit" src="{{ work.data.image_iphone }}" alt="{{ work.data.title }}" loading="lazy">
+            <img class="max-w-full" src="{{ work.data.image_iphone }}" alt="{{ work.data.title }}" loading="lazy">
           </a>
         </div>
       </article>
@@ -62,15 +62,15 @@ permalink: '/'
   </div>
 </section>
 
-<section id="we-make-things" class="clearfix">
-  <header class="section__header mt4 md-px3">
-    <h2 class="section__title col-12 md-col-10 px2 mb2 md-px0 mx-auto" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+<section id="we-make-things">
+  <header class="mt-16 md:px-8">
+    <h2 class="relative w-full md:w-5/6 px-4 mb-4 md:px-0 mx-auto">
       <span>We make things.</span>
     </h2>
   </header>
-  <article class="section__content col-12 md-px3 relative clearfix my4">
-    <div class="col-12 px2 md-px0 md-col-10 mx-auto relative">
-      <div class="col col-12 mb4">
+  <article class="w-full md:px-8 relative my-16">
+    <div class="w-full md:w-5/6 px-4 md:px-0 mx-auto relative flex flex-wrap">
+      <div class="w-full mb-16">
         <h3>
           Tell us your idea.<br>
           If it exists, we’ll make it for you.<br>
@@ -79,7 +79,7 @@ permalink: '/'
         <p>Incode is a full-stack web development and design studio. We build websites, e-commerce platforms and custom software, and we design the user experience around them — from research to interface.</p>
       </div>
 
-      <div class="col col-12 lg-col-4 mb4 lg-pr2">
+      <div class="w-full lg:w-1/3 mb-16 lg:pr-4">
         <h3>Websites, CMS &amp; e-commerce</h3>
         <ul>
           <li>Corporate and institutional websites, editorial portals</li>
@@ -92,7 +92,7 @@ permalink: '/'
         <p><strong>Technologies:</strong> WordPress, WooCommerce, Drupal, Shopify</p>
       </div>
 
-      <div class="col col-12 lg-col-4 mb4 lg-pr2">
+      <div class="w-full lg:w-1/3 mb-16 lg:pr-4">
         <h3>Custom full-stack development</h3>
         <ul>
           <li>Full-stack development and custom projects on Ruby on Rails and Node</li>
@@ -104,7 +104,7 @@ permalink: '/'
         <p><strong>Technologies:</strong> Ruby on Rails, Node.js, Vue.js, Astro, Eleventy, Netlify</p>
       </div>
 
-      <div class="col col-12 lg-col-4 mb4">
+      <div class="w-full lg:w-1/3 mb-16">
         <h3>UX &amp; UI design</h3>
         <ul>
           <li>UI and UX design</li>
@@ -118,13 +118,13 @@ permalink: '/'
   </article>
 </section>
 
-<section id="our-clients" class="clearfix mb4 hide">
-  <header class="section__header mt4 md-px3 center">
-    <div class="col-12 md-col-10 px2 md-px0 mx-auto center">
-      <div class="section__title mb2 center" style="transform: translate(0%, 0.0707608%) translate3d(0px, 0px, 0px);">
+<section id="our-clients" class="mb-16 sr-only">
+  <header class="mt-16 md:px-8 text-center">
+    <div class="w-full md:w-5/6 px-4 md:px-0 mx-auto text-center">
+      <div class="relative mb-4 text-center">
         We’ve worked as developer, web designer or UX analyst for various agencies and their clients like:
       </div>
-      <img class="section__logos mt2 mb4 fit hide" src="" alt="Our Clients">
+      <img class="mt-4 mb-16 max-w-full sr-only" src="" alt="Our Clients">
     </div>
   </header>
 </section>

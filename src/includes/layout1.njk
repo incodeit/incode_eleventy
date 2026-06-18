@@ -101,40 +101,34 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         
-        <main id="main" class="site-main overflow-hidden" role="main">
-            <header id="main-header" class="nav nav--main mt3 md-mt4 fixed top-0 right-0 left-0 px3">
-                <div class="max-width-6 mx-auto flex items-center">
-                    <div class="nav__logo-wrapper col col-6">
-                        <a class="nav__logo" href="/" rel="home"><img alt="logo" src="/assets/logo.svg">
+        <main id="main" class="overflow-hidden" role="main">
+            <header id="main-header" class="fixed top-0 right-0 left-0 z-[1000] mt-8 md:mt-16 px-8">
+                <div class="max-w-[96%] max-[480px]:max-w-full mx-auto flex items-center">
+                    <div class="w-1/2">
+                        <a href="/" rel="home"><img alt="logo" src="/assets/logo.svg">
                         </a>
                     </div>
-                    <nav class="nav__menu col col-6 right-align">
+                    <nav class="w-1/2 text-right">
                         <div class="menu-main-menu-container">
-                            <ul id="primary-menu" class="menu">
-                                <li
-                                    id="menu-item-38"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home
-                                        menu-item-38">
-                                    <a href="/#latest-works" aria-current="page">Works</a>
+                            <ul id="primary-menu" class="menu inline-block m-0 p-0 max-[650px]:hidden">
+                                <li class="inline-block mx-4">
+                                    <a class="text-white text-[1.4rem]" href="/#latest-works" aria-current="page">Works</a>
                                 </li>
-                                <li
-                                    id="menu-item-39"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home
-                                        menu-item-39">
-                                    <a href="/#we-make-things" aria-current="page">About</a>
+                                <li class="inline-block mx-4">
+                                    <a class="text-white text-[1.4rem]" href="/#we-make-things" aria-current="page">About</a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </header>
-            <div id="primary" class="content-area max-width-5 mx-auto px2">
+            <div id="primary" class="max-w-[88%] max-[480px]:max-w-full mx-auto px-4">
                 {{ content | safe }}
             </div>
-            <footer class="footer__main px3 my3 clearfix">
-                <div class="max-width-6 mx-auto my3">
-                    <div class="col col-12 md-col-12" style="text-align: center;">
-                        <div class="footer__info wysiwyg" style="display: inline;">
+            <footer class="border-t border-white/20 px-8 my-8">
+                <div class="max-w-[96%] max-[480px]:max-w-full mx-auto my-8">
+                    <div class="w-full text-center">
+                        <div class="footer__info" style="display: inline;">
                             <p>©2007- {% year_current %}
                                 <strong>Incode Snc</strong>
                                 di Bravo L. e Molinari A. - Iscr. Reg. Imprese di MN, Cod Fisc. e P.Iva 01357300191
@@ -144,19 +138,19 @@
                                     obbligo di pubblicità relativamente agli aiuti di stato ricevuti dalle aziende</a>
                             </p>
                         </div>
-                        <ul class="footer__info m0 p0 flex justify-center items-center">
-                            <li class="footer__link px1 list-reset">
-                                <a href="https://www.iubenda.com/privacy-policy/39654979" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                        <ul class="footer__info m-0 p-0 flex justify-center items-center">
+                            <li class="px-2 list-none pl-0">
+                                <a href="https://www.iubenda.com/privacy-policy/39654979" class="inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
                             </li>
-                            <li class="footer__link px1 list-reset">
-                                <a href="https://www.iubenda.com/privacy-policy/39654979/cookie-policy" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle" title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                            <li class="px-2 list-none pl-0">
+                                <a href="https://www.iubenda.com/privacy-policy/39654979/cookie-policy" class="inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle" title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
                             </li>
-                            <li class="footer__link px1 list-reset">
-                                <a href="https://siteparser.incode.it/static/websites/3/a11y-declaration-1-1eebea23c62088fe4ae47fedfb55a686-en.html" target="_blank" class="footer__policy-link inline-block" title="Accessibility Statement">Accessibility Statement</a>
+                            <li class="px-2 list-none pl-0">
+                                <a href="https://siteparser.incode.it/static/websites/3/a11y-declaration-1-1eebea23c62088fe4ae47fedfb55a686-en.html" target="_blank" class="inline-block" title="Accessibility Statement">Accessibility Statement</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col col-12 md-col-6"></div>
+                    <div class="w-full"></div>
                 </div>
             </footer>
         </main>
