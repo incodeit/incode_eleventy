@@ -15,6 +15,14 @@ The project uses [eleventy](https://www.11ty.dev/) to build the website. You can
 ```sh
 $ npm start  
 ```
+or use
+```sh
+$ netlify dev --no-open
+```
+then choose
+```sh
+$ Eleventy-npm run serve:eleventy
+```
 
 Navigate to http://localhost:8080 to get the website preview.
 
