@@ -11,12 +11,28 @@ function shuffleArray(array) {
   return arr;
 }
 
-function consoleEasterEgg() {
-  console.log(
-    '%cincode%cHello everyone, it\'s great that you\'ve come to visit us here :-) drop us a line at info@incode.it',
-    'color: #000; background: #fff; font-family: Impact, Haettenschweiler, "Arial Black", "Helvetica Neue", sans-serif; font-size: 64px; font-weight: 900; letter-spacing: 0.04em; padding: 16px 24px 8px; line-height: 1;',
-    'color: #000; background: #fff; font-family: Courier, "Courier New", monospace; font-size: 13px; padding: 8px 24px 16px;'
-  );
+async function consoleEasterEgg() {
+  const logoStyle =
+    'color: #000; background: #fff; font-family: Impact, Haettenschweiler, "Arial Black", "Helvetica Neue", sans-serif; font-size: 64px; font-weight: 900; letter-spacing: 0.04em; padding: 16px 24px 8px; line-height: 1;';
+  const textStyle =
+    'color: #000; background: #fff; font-family: Courier, "Courier New", monospace; font-size: 13px; padding: 8px 24px 16px;';
+
+  let body =
+    "Hello everyone, it's great that you've come to visit us here :-) drop us a line at info@incode.it\nand remember:";
+
+  try {
+    const res = await fetch("https://geek-jokes.sameerkumar.website/api?format=json");
+    if (res.ok) {
+      const { joke } = await res.json();
+      if (joke) {
+        body += `\n${joke}\n— source: geek-jokes.sameerkumar.website`;
+      }
+    }
+  } catch {
+    // silently skip joke if the request fails
+  }
+
+  console.log(`%cincode%c${body}`, logoStyle, textStyle);
 }
 
 consoleEasterEgg();
