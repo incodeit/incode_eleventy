@@ -13,6 +13,20 @@ function shuffleArray(array) {
   return arr;
 }
 
+function consoleEasterEgg() {
+  console.log(
+    '%cincode',
+    'color: #000; background: #fff; font-family: Impact, Haettenschweiler, "Arial Black", "Helvetica Neue", sans-serif; font-size: 64px; font-weight: 900; letter-spacing: 0.04em; padding: 16px 24px 8px; line-height: 1;'
+  );
+
+  console.log(
+    '%cHello everyone, it\'s great that you\'ve come to visit us here :-) drop us a line at info@incode.it',
+    'color: #000; background: #fff; font-family: Courier, "Courier New", monospace; font-size: 13px; padding: 8px 24px 16px;'
+  );
+}
+
+consoleEasterEgg();
+
 document.addEventListener("DOMContentLoaded", () => {
   const lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazyload",
