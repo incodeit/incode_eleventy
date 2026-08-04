@@ -8,6 +8,7 @@
 {%- set pageDescription = description or site.descriptionShort -%}
 {%- set isHome = page.url == "/" -%}
 {%- set isAiuti = page.url == "/aiuti-stato/" -%}
+{# Core entity graph #}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,7 +102,7 @@
         "url": {{ site.logo | dump | safe }}
       }
       {%- if isHome -%}
-      ,      "speakable": {
+      ,"speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": ["#hero h1", "#hero p", "#aeo-faq", "#aeo-howto"]
       },
@@ -128,91 +129,125 @@
         {%- endif -%}
       ]
     }
-    {%- if isHome -%}
-    ,{
-      "@type": "Article",
-      "@id": {{ (site.url + "/#article") | dump | safe }},
-      "headline": {{ (site.name + " – " + site.tagline) | dump | safe }},
-      "description": {{ site.description | dump | safe }},
-      "url": {{ site.url | dump | safe }},
-      "image": {{ site.logo | dump | safe }},
-      "datePublished": {{ site.datePublished | dump | safe }},
-      "dateModified": {{ site.dateModified | dump | safe }},
-      "inLanguage": "en",
-      "author": { "@id": {{ orgId | dump | safe }} },
-      "publisher": { "@id": {{ orgId | dump | safe }} },
-      "mainEntityOfPage": { "@id": {{ pageId | dump | safe }} },
-      "about": { "@id": {{ orgId | dump | safe }} },
-      "articleSection": "Company",
-      "keywords": {{ site.knowsAbout | join(", ") | dump | safe }}
-    },
-    {
-      "@type": "FAQPage",
-      "@id": {{ (site.url + "/#faq") | dump | safe }},
-      "url": {{ (site.url + "/#aeo-faq") | dump | safe }},
-      "datePublished": {{ site.datePublished | dump | safe }},
-      "dateModified": {{ site.dateModified | dump | safe }},
-      "mainEntity": [
-        {%- for item in faq.items -%}
-        {
-          "@type": "Question",
-          "name": {{ item.question | dump | safe }},
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": {{ item.answer | dump | safe }}
-          }
-        }{% if not loop.last %},{% endif %}
-        {%- endfor -%}
-      ]
-    },
-    {
-      "@type": "HowTo",
-      "@id": {{ (site.url + "/#howto") | dump | safe }},
-      "name": "How to start a project with Incode",
-      "description": "Simple steps to begin a website, e-commerce or custom software project with Incode.",
-      "datePublished": {{ site.datePublished | dump | safe }},
-      "dateModified": {{ site.dateModified | dump | safe }},
-      "totalTime": "P3D",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "position": 1,
-          "name": "Share your idea",
-          "text": "Email info@incode.it with your product idea, goals and timeline."
-        },
-        {
-          "@type": "HowToStep",
-          "position": 2,
-          "name": "Align on scope",
-          "text": "We review requirements together and define UX, technology stack and delivery plan."
-        },
-        {
-          "@type": "HowToStep",
-          "position": 3,
-          "name": "Build and iterate",
-          "text": "We design, develop and ship websites, e-commerce or custom full-stack products with you as a partner."
-        }
-      ]
-    }
-    {%- endif -%}
-    {%- if isAiuti -%}
-    ,{
-      "@type": "Article",
-      "@id": {{ (pageUrl + "#article") | dump | safe }},
-      "headline": {{ pageTitle | dump | safe }},
-      "description": {{ pageDescription | dump | safe }},
-      "url": {{ pageUrl | dump | safe }},
-      "image": {{ site.logo | dump | safe }},
-      "datePublished": {{ published | dump | safe }},
-      "dateModified": {{ modified | dump | safe }},
-      "inLanguage": "it",
-      "author": { "@id": {{ orgId | dump | safe }} },
-      "publisher": { "@id": {{ orgId | dump | safe }} },
-      "mainEntityOfPage": { "@id": {{ pageId | dump | safe }} },
-      "articleSection": "Legal",
-      "about": "Aiuti di Stato – trasparenza L. 124/2017"
-    }
-    {%- endif -%}
   ]
 }
 </script>
+
+{# Standalone root @type scripts — many AEO scanners only detect these #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": {{ (pageUrl + "#article") | dump | safe }},
+  "headline": {{ pageTitle | dump | safe }},
+  "description": {{ pageDescription | dump | safe }},
+  "url": {{ pageUrl | dump | safe }},
+  "image": {{ site.logo | dump | safe }},
+  "datePublished": {{ published | dump | safe }},
+  "dateModified": {{ modified | dump | safe }},
+  "inLanguage": {% if isAiuti %}"it"{% else %}"en"{% endif %},
+  "author": {
+    "@type": "Organization",
+    "name": {{ site.legalName | dump | safe }},
+    "url": {{ site.url | dump | safe }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.legalName | dump | safe }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ site.logo | dump | safe }}
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ pageId | dump | safe }}
+  }
+}
+</script>
+
+{%- if isHome %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": {{ (site.url + "/#faq") | dump | safe }},
+  "url": {{ (site.url + "/#aeo-faq") | dump | safe }},
+  "datePublished": {{ site.datePublished | dump | safe }},
+  "dateModified": {{ site.dateModified | dump | safe }},
+  "mainEntity": [
+    {%- for item in faq.items -%}
+    {
+      "@type": "Question",
+      "name": {{ item.question | dump | safe }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.answer | dump | safe }}
+      }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "@id": {{ (site.url + "/#howto") | dump | safe }},
+  "name": "How to start a project with Incode",
+  "description": "Simple steps to begin a website, e-commerce or custom software project with Incode.",
+  "datePublished": {{ site.datePublished | dump | safe }},
+  "dateModified": {{ site.dateModified | dump | safe }},
+  "totalTime": "P3D",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Share your idea",
+      "text": "Email info@incode.it with your product idea, goals and timeline."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Align on scope",
+      "text": "We review requirements together and define UX, technology stack and delivery plan."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Build and iterate",
+      "text": "We design, develop and ship websites, e-commerce or custom full-stack products with you as a partner."
+    }
+  ]
+}
+</script>
+{%- elif isAiuti %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": {{ (pageUrl + "#faq") | dump | safe }},
+  "url": {{ pageUrl | dump | safe }},
+  "datePublished": {{ published | dump | safe }},
+  "dateModified": {{ modified | dump | safe }},
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Cosa pubblica Incode Srl riguardo agli aiuti di Stato?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Come disposto dall’art. 1, comma 125, della L. 124/2017, Incode Srl espone gli importi relativi a sovvenzioni, contributi e vantaggi economici ricevuti dalle pubbliche amministrazioni."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dove verificare gli aiuti di Incode Srl?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gli aiuti sono consultabili nel Registro Nazionale degli Aiuti di Stato inserendo il codice fiscale 01357300191."
+      }
+    }
+  ]
+}
+</script>
+{%- endif %}
