@@ -5,7 +5,7 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy");
 module.exports = function(config) {
   config.addPassthroughCopy('src/assets')
   config.addWatchTarget("./src/");
-  config.addWatchTarget("./src/scss");
+  config.addWatchTarget("./src/css");
   config.addLayoutAlias("layout1", "layout1.njk");
 
   config.addPlugin(EleventyRenderPlugin);
