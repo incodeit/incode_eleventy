@@ -1,5 +1,3 @@
-import $ from 'jquery'
-import setupSlideshow from './components/slideshow'
 import objectFitImages from 'object-fit-images'
 import LazyLoad from "vanilla-lazyload"
 import Typed from 'typed.js';
@@ -24,30 +22,26 @@ function consoleEasterEgg() {
 consoleEasterEgg();
 
 document.addEventListener("DOMContentLoaded", () => {
-  const lazyLoadInstance = new LazyLoad({
+  new LazyLoad({
     elements_selector: ".lazyload",
   })
 
-  const coverImages = document.querySelectorAll('.cover-image')
-  objectFitImages(coverImages)
-  setupSlideshow('#full-width-slideshow .slides')
+  objectFitImages(document.querySelectorAll('.cover-image'))
 
-  // Shuffle works
   const container = document.getElementById('works-container');
   if (container) {
     const works = Array.from(container.querySelectorAll('.work'));
-    const shuffled = shuffleArray(works);
-    shuffled.forEach(work => container.appendChild(work));
+    shuffleArray(works).forEach((work) => container.appendChild(work));
   }
 
-  var options = {
-    strings: ["We build.", "We code.", "We design."],
-    typeSpeed: 150,
-    smartBackspace: false,
-    fadeOut: true,
-    loop: true,
-    backDelay: 2500,
+  if (document.querySelector(".hero__typewrite")) {
+    new Typed(".hero__typewrite", {
+      strings: ["We build.", "We code.", "We design."],
+      typeSpeed: 150,
+      smartBackspace: false,
+      fadeOut: true,
+      loop: true,
+      backDelay: 2500,
+    });
   }
-
-  if (document.getElementsByClassName("hero__typewrite")[0]) new Typed(".hero__typewrite", options);
-}); 
+});

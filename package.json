@@ -47,11 +47,9 @@
   "dependencies": {
     "@popperjs/core": "^2.11.2",
     "gsap": "^3.11.4",
-    "jquery": "^3.6.3",
     "object-fit-images": "^3.2.4",
     "scrollmagic": "^2.0.8",
     "scrollmagic-plugin-gsap": "^1.0.4",
-    "slick-carousel": "^1.8.1",
     "typed.js": "^2.0.12",
     "vanilla-lazyload": "^17.8.3"
   }
