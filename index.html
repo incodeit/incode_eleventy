@@ -29,45 +29,38 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         
-        <main id="main" class="site-main overflow-hidden" role="main">
-            <header id="main-header" class="nav nav--main mt3 md-mt4 fixed top-0 right-0 left-0 px3">
-                <div class="max-width-6 mx-auto flex items-center">
-                    <div class="nav__logo-wrapper col col-6">
-                        <a class="nav__logo" href="/" rel="home"><img alt="logo" src="/assets/logo.svg">
+        <main id="main" class="overflow-hidden" role="main">
+            <header id="main-header" class="fixed top-0 right-0 left-0 z-[1000] mt-8 px-8 md:mt-16">
+                <div class="mx-auto flex max-w-full items-center min-[481px]:max-w-[96%]">
+                    <div class="w-1/2">
+                        <a href="/" rel="home">
+                            <img alt="logo" src="/assets/logo.svg" class="align-top">
                         </a>
                     </div>
-                    <nav class="nav__menu col col-6 right-align">
-                        <div class="menu-main-menu-container">
-                            <ul id="primary-menu" class="menu">
-                                <li
-                                    id="menu-item-38"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home
-                                        menu-item-38">
-                                    <a href="/#latest-works" aria-current="page">Works</a>
-                                </li>
-                                <li
-                                    id="menu-item-39"
-                                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home
-                                        menu-item-39">
-                                    <a href="/#we-make-things" aria-current="page">About</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <nav class="w-1/2 text-right">
+                        <ul id="primary-menu" class="m-0 hidden list-none p-0 phone:inline-block">
+                            <li class="mx-4 inline-block p-0">
+                                <a href="/#latest-works" aria-current="page" class="text-[1.4rem] text-white no-underline hover:underline">Works</a>
+                            </li>
+                            <li class="mx-4 inline-block p-0">
+                                <a href="/#we-make-things" aria-current="page" class="text-[1.4rem] text-white no-underline hover:underline">About</a>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
             </header>
-            <div id="primary" class="content-area max-width-5 mx-auto px2">
+            <div id="primary" class="mx-auto max-w-full px-4 min-[481px]:max-w-[88%]">
                 
-<section id="hero" class="clearfix">
-  <header class="hero__header px2">
-    <h1 class="hero__title mb2">
+<section id="hero" class=" min-h-screen clear-both">
+  <header class="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-4 text-center">
+    <h1 class="mb-4 text-[2.8rem] leading-[1.2] whitespace-normal phone:text-[4rem] phone:whitespace-nowrap tablet:text-[6rem] tablet:leading-none">
       <span>
-        <span class="hero__title--start">You think.</span>
+        <span class="block phone:inline">You think.</span>
         <span class="hero__typewrite"></span>
       </span>
     </h1>
-    <div class="hero__content mx-auto">
-      <p class="p1">We are an
+    <div class="mx-auto max-w-[54rem] text-[1.8rem] phone:text-[1.8rem]">
+      <p class="m-0 p-0">We are an
         <strong>Italian</strong>
         <strong>creative</strong>
         <strong>studio</strong>
@@ -78,365 +71,372 @@
         <strong>with</strong>
         <strong>them</strong>, rather than for them.</p>
     </div>
-    <div class="hero__cta mt3 sm-mt4">
+    <div class="mt-8 sm:mt-16">
       <a class="button" href="mailto:info@incode.it">Contact us</a>
     </div>
   </header>
-  <div class="hero__toggle"></div>
+  <div class="animate-bounce-hero absolute bottom-12 left-[calc(50%-1px)] z-0 h-12 w-0.5 bg-white/30"></div>
 </section>
 
-<section id="latest-works" class="clearfix">
-  <header class="section__header mt4 px2 center">
-    <h2 class="section__title mb4">
+<section id="latest-works" class="clear-both">
+  <header class="mt-16 px-4 text-center">
+    <h2 class=" mb-16 text-[1.8rem] leading-[1.2] phone:text-[2.6rem] phone:leading-none">
       <span>Idea + Technology + Lean Design</span>
     </h2>
-    <p class="section__description m0">Here's a random list of our works, <a href="javascript:location.reload()">refresh the page</a> to get more</a></p>
+    <p class="m-0 text-[1.25rem] phone:text-[1.5rem] [&_a]:text-white">Here's a random list of our works, <a href="javascript:location.reload()">refresh the page</a> to get more</p>
   </header>
-  <div id="works-container"><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">DVArea</h1>
-          <span class="work__subtitle">Developed for DVArea.</span>
+  <div id="works-container"><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">DVArea</h1>
+          <span>Developed for DVArea.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://dvarea.com" target="_blank">
-            <img class="work__image fit" src="assets/works/dvarea/dvarea_desktop.webp" alt="DVArea" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/dvarea/dvarea_desktop.webp" alt="DVArea" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://dvarea.com" target="_blank">
-            <img class="work__image fit" src="assets/works/dvarea/dvarea_mobile.webp" alt="DVArea" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/dvarea/dvarea_mobile.webp" alt="DVArea" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Escapista</h1>
-          <span class="work__subtitle">Developed for Bluceleste.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Escapista</h1>
+          <span>Developed for Bluceleste.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://escapista.com/it" target="_blank">
-            <img class="work__image fit" src="assets/works/escapista/escapista_desktop.webp" alt="Escapista" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/escapista/escapista_desktop.webp" alt="Escapista" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://escapista.com/it" target="_blank">
-            <img class="work__image fit" src="assets/works/escapista/escapista_mobile.webp" alt="Escapista" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/escapista/escapista_mobile.webp" alt="Escapista" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">showREAL</h1>
-          <span class="work__subtitle">Developed for Yam112003.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">showREAL</h1>
+          <span>Developed for Yam112003.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://www.showreal.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/showreal/showreal_desktop.webp" alt="showREAL" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/showreal/showreal_desktop.webp" alt="showREAL" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://www.showreal.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/showreal/showreal_mobile.webp" alt="showREAL" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/showreal/showreal_mobile.webp" alt="showREAL" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Studio Notarile Mistretta</h1>
-          <span class="work__subtitle">Developed for 1STUDIO.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Studio Notarile Mistretta</h1>
+          <span>Developed for 1STUDIO.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://www.notaiomistretta.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/mistretta/mistretta_desktop.webp" alt="Studio Notarile Mistretta" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/mistretta/mistretta_desktop.webp" alt="Studio Notarile Mistretta" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://www.notaiomistretta.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/mistretta/mistretta_mobile.webp" alt="Studio Notarile Mistretta" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/mistretta/mistretta_mobile.webp" alt="Studio Notarile Mistretta" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">CosmoIMD</h1>
-          <span class="work__subtitle">Developed for CRSL Carosello Lab.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">CosmoIMD</h1>
+          <span>Developed for CRSL Carosello Lab.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://cosmoimd.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/cosmoimd/cosmo_desktop.webp" alt="CosmoIMD" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/cosmoimd/cosmo_desktop.webp" alt="CosmoIMD" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://cosmoimd.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/cosmoimd/cosmo_mobile.webp" alt="CosmoIMD" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/cosmoimd/cosmo_mobile.webp" alt="CosmoIMD" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Arvedi Automotive</h1>
-          <span class="work__subtitle">Front-end development, animations and product configurator for Gamm System.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Arvedi Automotive</h1>
+          <span>Front-end development, animations and product configurator for Gamm System.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://automotive.arvedi.it/it/" target="_blank">
-            <img class="work__image fit" src="assets/works/arvedi-automotive/arvedi_desktop.webp" alt="Arvedi Automotive" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/arvedi-automotive/arvedi_desktop.webp" alt="Arvedi Automotive" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://automotive.arvedi.it/it/" target="_blank">
-            <img class="work__image fit" src="assets/works/arvedi-automotive/arvedi_mobile.webp" alt="Arvedi Automotive" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/arvedi-automotive/arvedi_mobile.webp" alt="Arvedi Automotive" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">The Blender Magazine</h1>
-          <span class="work__subtitle">Developed for Yam112003.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">The Blender Magazine</h1>
+          <span>Developed for Yam112003.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://theblendermagazine.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/lavazza-theblender/blender_desktop.webp" alt="The Blender Magazine" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/lavazza-theblender/blender_desktop.webp" alt="The Blender Magazine" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://theblendermagazine.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/lavazza-theblender/blender_mobile.webp" alt="The Blender Magazine" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/lavazza-theblender/blender_mobile.webp" alt="The Blender Magazine" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Next Sport</h1>
-          <span class="work__subtitle">Front-end and Shopify e-commerce development for 1Studio.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Next Sport</h1>
+          <span>Front-end and Shopify e-commerce development for 1Studio.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://nextsport.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/nextsport/nextsport_desktop.webp" alt="Next Sport" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/nextsport/nextsport_desktop.webp" alt="Next Sport" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://nextsport.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/nextsport/nextsport_mobile.webp" alt="Next Sport" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/nextsport/nextsport_mobile.webp" alt="Next Sport" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Alla Carta</h1>
-          <span class="work__subtitle"></span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Alla Carta</h1>
+          <span></span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://allacarta.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/allacarta/allacarta_desktop.webp" alt="Alla Carta" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/allacarta/allacarta_desktop.webp" alt="Alla Carta" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://allacarta.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/allacarta/allacarta_mobile.webp" alt="Alla Carta" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/allacarta/allacarta_mobile.webp" alt="Alla Carta" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Surgital</h1>
-          <span class="work__subtitle">Developed for Yam112003</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Surgital</h1>
+          <span>Developed for Yam112003</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://www.surgital.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/surgital/surgital_desktop.webp" alt="Surgital" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/surgital/surgital_desktop.webp" alt="Surgital" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://www.surgital.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/surgital/surgital_mobile.webp" alt="Surgital" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/surgital/surgital_mobile.webp" alt="Surgital" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Audiovisiva Educational</h1>
-          <span class="work__subtitle"></span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Audiovisiva Educational</h1>
+          <span></span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://educational.audiovisiva.org/" target="_blank">
-            <img class="work__image fit" src="assets/works/audiovisiva-educational/audiovisiva_desktop.webp" alt="Audiovisiva Educational" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/audiovisiva-educational/audiovisiva_desktop.webp" alt="Audiovisiva Educational" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://educational.audiovisiva.org/" target="_blank">
-            <img class="work__image fit" src="assets/works/audiovisiva-educational/audiovisiva_mobile.webp" alt="Audiovisiva Educational" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/audiovisiva-educational/audiovisiva_mobile.webp" alt="Audiovisiva Educational" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Livingstone</h1>
-          <span class="work__subtitle"></span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Livingstone</h1>
+          <span></span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://livingstone-tech.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/livingstone/livingstone_desktop.webp" alt="Livingstone" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/livingstone/livingstone_desktop.webp" alt="Livingstone" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://livingstone-tech.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/livingstone/livingstone_mobile.webp" alt="Livingstone" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/livingstone/livingstone_mobile.webp" alt="Livingstone" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Fileni, time sharing multietnico</h1>
-          <span class="work__subtitle">Developed for Fileni.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Fileni, time sharing multietnico</h1>
+          <span>Developed for Fileni.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://timesharingmultietnico.it" target="_blank">
-            <img class="work__image fit" src="assets/works/fileni/fileni_desktop.webp" alt="Fileni, time sharing multietnico" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/fileni/fileni_desktop.webp" alt="Fileni, time sharing multietnico" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://timesharingmultietnico.it" target="_blank">
-            <img class="work__image fit" src="assets/works/fileni/fileni_mobile.webp" alt="Fileni, time sharing multietnico" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/fileni/fileni_mobile.webp" alt="Fileni, time sharing multietnico" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Crit Research</h1>
-          <span class="work__subtitle"></span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Crit Research</h1>
+          <span></span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://crit-research.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/crit/crit_desktop.webp" alt="Crit Research" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/crit/crit_desktop.webp" alt="Crit Research" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://crit-research.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/crit/crit_mobile.webp" alt="Crit Research" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/crit/crit_mobile.webp" alt="Crit Research" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Tre Marie</h1>
-          <span class="work__subtitle">Developed for YAM112003.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Tre Marie</h1>
+          <span>Developed for YAM112003.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://tremarie.galbusera.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/tremarie/tremarie_desktop.webp" alt="Tre Marie" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/tremarie/tremarie_desktop.webp" alt="Tre Marie" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://tremarie.galbusera.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/tremarie/tremarie_mobile.webp" alt="Tre Marie" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/tremarie/tremarie_mobile.webp" alt="Tre Marie" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">RPN</h1>
-          <span class="work__subtitle">Developed for Quiqueg.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">RPN</h1>
+          <span>Developed for Quiqueg.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://rpngroup.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/rpn/rpn_desktop.webp" alt="RPN" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/rpn/rpn_desktop.webp" alt="RPN" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://rpngroup.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/rpn/rpn_mobile.webp" alt="RPN" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/rpn/rpn_mobile.webp" alt="RPN" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Laba</h1>
-          <span class="work__subtitle"></span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Laba</h1>
+          <span></span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://laba.edu/" target="_blank">
-            <img class="work__image fit" src="assets/works/laba/laba_desktop.webp" alt="Laba" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/laba/laba_desktop.webp" alt="Laba" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://laba.edu/" target="_blank">
-            <img class="work__image fit" src="assets/works/laba/laba_mobile.webp" alt="Laba" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/laba/laba_mobile.webp" alt="Laba" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Daniel Germani</h1>
-          <span class="work__subtitle">Developed for Peterman.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Daniel Germani</h1>
+          <span>Developed for Peterman.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://danielgermani.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/danielgermani/danielgermani_desktop.webp" alt="Daniel Germani" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/danielgermani/danielgermani_desktop.webp" alt="Daniel Germani" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://danielgermani.com/" target="_blank">
-            <img class="work__image fit" src="assets/works/danielgermani/danielgermani_mobile.webp" alt="Daniel Germani" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/danielgermani/danielgermani_mobile.webp" alt="Daniel Germani" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Globus</h1>
-          <span class="work__subtitle">Developed for Globus.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Globus</h1>
+          <span>Developed for Globus.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://globussrl.it" target="_blank">
-            <img class="work__image fit" src="assets/works/globus/globus_desktop.webp" alt="Globus" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/globus/globus_desktop.webp" alt="Globus" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://globussrl.it" target="_blank">
-            <img class="work__image fit" src="assets/works/globus/globus_mobile.webp" alt="Globus" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/globus/globus_mobile.webp" alt="Globus" loading="lazy">
           </a>
         </div>
-      </article><article class="work col-12 px2 relative clearfix mb4">
-        <header class="work__header mt4 mb2 md-mb2 col-12 md-col-12 mx-auto">
-          <h1 class="work__title">Punt e Mes</h1>
-          <span class="work__subtitle">Developed for YAM112003.</span>
+      </article><article class="work  mb-16 w-full clear-both px-4">
+        <header class="mx-auto mt-16 mb-4 w-full">
+          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Punt e Mes</h1>
+          <span>Developed for YAM112003.</span>
         </header>
-        <div class="work__image--wrapper col-12 mx-auto relative xs-hide sm-hide">
+        <div class=" mx-auto hidden w-full md:block">
           <a href="https://www.puntemes.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/pem/pem_desktop.webp" alt="Punt e Mes" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/pem/pem_desktop.webp" alt="Punt e Mes" loading="lazy">
           </a>
         </div>
-        <div class="work__image--wrapper col-12 mx-auto relative md-hide lg-hide">
+        <div class=" mx-auto block w-full md:hidden">
           <a href="https://www.puntemes.it/" target="_blank">
-            <img class="work__image fit" src="assets/works/pem/pem_mobile.webp" alt="Punt e Mes" loading="lazy">
+            <img class="w-full max-w-full align-top" src="assets/works/pem/pem_mobile.webp" alt="Punt e Mes" loading="lazy">
           </a>
         </div>
       </article></div>
 </section>
 
-<section id="we-make-things" class="clearfix">
-  <header class="section__header mt4 md-px3">
-    <h2 class="section__title col-12 md-col-10 px2 mb2 md-px0 mx-auto" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+<section id="we-make-things" class="">
+  <header class="mt-16 md:px-8">
+    <h2 class="mx-auto mb-4 w-full px-4 text-[1.8rem] leading-[1.2] md:w-5/6 md:px-0 phone:text-[2.6rem] phone:leading-none">
       <span>We make things.</span>
     </h2>
   </header>
-  <article class="section__content col-12 md-px3 relative clearfix my4">
-    <div class="col-12 px2 md-px0 md-col-10 mx-auto relative">
-     <div class="col col-12 lg-col-6 mb4">
-        <h3>
+  <article class="my-16 w-full md:px-8">
+    <div class="mx-auto w-full px-4 md:w-5/6 md:px-0 grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <div class="mb-16 w-full ">
+        <h3 class="text-[1.8rem] font-normal">
           Tell us your idea.<br>
           If it exists, we’ll make it for you.<br>
            If it doesn’t, we’ll make it up.
         </h3>
       </div>
-      <div class="col col-12 lg-col-6 lg-pl2">
-        <h3>Websites, E-commerce</h3>
-        <p>WordPress, WooCommerce, Drupal, Shopify</p>
-        <h3>Custom projects</h3>
-        <p>Ruby/Rails, Node, Vue, architecture and integration</p>
-        <h3>UX, UI</h3>
-        <p>Design, evaluation, assessment and consulting</p>
+      <div class="w-full ">
+        <div class="mb-6">
+          <h3 class="text-[1.8rem] font-normal">Websites, E-commerce</h3>
+          <p class="text-[1.2rem]">WordPress, WooCommerce, Drupal, Shopify</p>
+        </div>
+        <div class="mb-6"> 
+          <h3 class="text-[1.8rem] font-normal ">Custom projects</h3>
+          <p class="text-[1.2rem]">Ruby/Rails, Node, Vue, architecture and integration</p>
+        </div>
+        <div class="mb-6">
+          <h3 class="text-[1.8rem] font-normal ">UX, UI</h3>
+          <p class="text-[1.2rem]">Design, evaluation, assessment and consulting</p>
+        </div>
       </div>
     </div>
   </article>
 </section>
 
-<section id="our-clients" class="clearfix mb4 hide">
-  <header class="section__header mt4 md-px3 center">
-    <div class="col-12 md-col-10 px2 md-px0 mx-auto center">
-      <div class="section__title mb2 center" style="transform: translate(0%, 0.0707608%) translate3d(0px, 0px, 0px);">
+<section id="our-clients" class="mb-16 hidden clear-both">
+  <header class="mt-16 text-center md:px-8">
+    <div class="mx-auto w-full px-4 text-center md:w-5/6 md:px-0">
+      <div class="mb-4 text-center">
         We’ve worked as developer, web designer or UX analyst for various agencies and their clients like:
       </div>
-      <img class="section__logos mt2 mb4 fit hide" src="" alt="Our Clients">
+      <img class="mt-4 mb-16 hidden w-full max-w-full" src="" alt="Our Clients">
     </div>
   </header>
 </section>
+
             </div>
-            <footer class="footer__main px3 my3 clearfix">
-                <div class="max-width-6 mx-auto my3">
-                    <div class="col col-12 md-col-12" style="text-align: center;">
-                        <div class="footer__info wysiwyg" style="display: inline;">
+            <footer class="my-8 clear-both border-t border-white/20 px-8">
+                <div class="mx-auto my-8 max-w-full min-[481px]:max-w-[96%]">
+                    <div class="w-full text-center">
+                        <div class="footer__info inline">
                             <div>©2007-2026 <strong>Incode Srl</strong> 
                                 Iscr. Reg. Imprese di MN, Cod Fisc. e P.Iva 01357300191 - REA: MN-231381 - 
                                 Capitale Sociale € 10.000 i.v.
@@ -456,19 +456,18 @@
                                     obbligo di pubblicità relativamente agli aiuti di stato ricevuti dalle aziende</a>
                             </div>
                         </div>
-                        <ul class="footer__info m0 p0 flex justify-center items-center">
-                            <li class="footer__link px1 list-reset">
+                        <ul class="footer__info m-0 flex list-none items-center justify-center p-0">
+                            <li class="list-none px-4">
                                 <a href="https://www.iubenda.com/privacy-policy/39654979" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
                             </li>
-                            <li class="footer__link px1 list-reset">
+                            <li class="list-none px-4">
                                 <a href="https://www.iubenda.com/privacy-policy/39654979/cookie-policy" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle" title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
                             </li>
-                            <li class="footer__link px1 list-reset">
+                            <li class="list-none px-4">
                                 <a href="https://siteparser.incode.it/static/websites/3/a11y-declaration-1-1eebea23c62088fe4ae47fedfb55a686-en.html" target="_blank" class="footer__policy-link inline-block" title="Accessibility Statement">Accessibility Statement</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col col-12 md-col-6"></div>
                 </div>
             </footer>
         </main>
@@ -482,9 +481,6 @@
         <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
         <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
-        <script>
-            console.log('Hello');
-        </script>
         <script src="/main.js" defer></script>
     </body>
 </html>
