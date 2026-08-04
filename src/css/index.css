@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@source "../**/*.{njk,html,md,js}";
+
+@theme {
+  --font-sans: "Kumbh Sans", sans-serif;
+  --color-surface: #171921;
+  --color-brand-from: #f55648;
+  --color-brand-to: #d02868;
+  /* min-width breakpoints (mobile-first) */
+  --breakpoint-phone: 40.625rem; /* 650px */
+  --breakpoint-tablet: 61.875rem; /* 990px */
+}
+
+@layer base {
+  html {
+    font-size: 15px;
+    background: var(--color-surface);
+  }
+
+  body {
+    @apply m-0 min-h-screen overflow-x-hidden bg-surface p-0 font-sans text-[15px] leading-[1.4] text-white/70 antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Top fade overlay */
+  body::before {
+    content: " ";
+    @apply pointer-events-none fixed top-0 right-0 left-0 z-[999] block h-[50vw] phone:h-[10vw];
+    background: linear-gradient(180deg, #171921 0%, rgba(23, 25, 33, 0) 100%);
+  }
+
+  a {
+    @apply no-underline hover:underline;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply m-0 p-0 font-bold not-italic text-white;
+  }
+
+  p {
+    @apply p-0;
+  }
+}
+
+@layer components {
+  .button {
+    @apply inline-block rounded-full px-8 py-4 font-semibold tracking-[2px] text-white uppercase no-underline shadow-[0_3px_34px_0_rgba(0,0,0,0.3)] transition-all duration-300 will-change-auto hover:no-underline hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.2)];
+    background-image: linear-gradient(-163deg, var(--color-brand-from) 0%, var(--color-brand-to) 89%);
+  }
+
+  .typed-cursor {
+    @apply font-normal text-white/30;
+  }
+}
+
+@layer utilities {
+  @keyframes bounce-hero {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-bounce-hero {
+    animation: bounce-hero 4s infinite;
+  }
+}
+
+/* iubenda widget override */
+.iub__us-widget {
+  display: none !important;
+}
+
+/* iubenda embed links in footer */
+.footer__info a {
+  color: white;
+  height: 0 !important;
+  width: auto !important;
+}

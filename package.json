@@ -8,13 +8,13 @@
     "start": "run-p serve:eleventy watch:parcel",
     "serve:eleventy": "cross-env ELEVENTY_ENV=local eleventy --serve",
     "watch:parcel": "run-p watch:css watch:js watch:images",
-    "watch:css": "parcel watch ./src/scss/index.scss --dist-dir ./dist/css",
+    "watch:css": "parcel watch ./src/css/index.css --dist-dir ./dist/css",
     "watch:js": "parcel watch ./src/js/main.js --dist-dir ./dist",
     "watch:images": "parcel watch ./src/img/*",
     "build": "run-s clean build:eleventy build:parcel",
     "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
     "build:parcel": "run-s build:images build:css build:js",
-    "build:css": "parcel build ./src/scss/index.scss --dist-dir ./dist/css",
+    "build:css": "parcel build ./src/css/index.css --dist-dir ./dist/css",
     "build:js": "parcel build ./src/js/main.js --dist-dir ./dist",
     "build:images": "parcel build src/assets/img/* --dist-dir ./dist/assets/img",
     "clean": "rm -rf dist .parcel-cache",
@@ -33,7 +33,7 @@
   "homepage": "https://github.com/incodeit/incode_eleventy#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
-    "@parcel/transformer-sass": "^2.8.3",
+    "@tailwindcss/postcss": "^4.3.3",
     "autoprefixer": "^10.4.2",
     "cross-env": "^7.0.3",
     "gh-pages": "4.0.0",
@@ -42,21 +42,14 @@
     "nunjucks": "^3.2.3",
     "parcel": "^2.2.1",
     "postcss": "^8.4.5",
-    "sass": "^1.49.0"
+    "tailwindcss": "^4.3.3"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.2",
-    "@webpixels/css": "^1.1.9",
-    "basscss": "^8.1.0",
-    "basscss-sass": "^4.0.0",
-    "bootstrap": "^5.1.3",
     "gsap": "^3.11.4",
-    "jquery": "^3.6.3",
-    "normalize": "^0.3.1",
     "object-fit-images": "^3.2.4",
     "scrollmagic": "^2.0.8",
     "scrollmagic-plugin-gsap": "^1.0.4",
-    "slick-carousel": "^1.8.1",
     "typed.js": "^2.0.12",
     "vanilla-lazyload": "^17.8.3"
   }
