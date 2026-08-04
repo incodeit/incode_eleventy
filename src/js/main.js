@@ -1,5 +1,3 @@
-import objectFitImages from 'object-fit-images'
-import LazyLoad from "vanilla-lazyload"
 import Typed from 'typed.js';
 
 function shuffleArray(array) {
@@ -35,15 +33,13 @@ async function consoleEasterEgg() {
   console.log(`%cincode%c${body}`, logoStyle, textStyle);
 }
 
-consoleEasterEgg();
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(() => consoleEasterEgg(), { timeout: 5000 });
+} else {
+  window.addEventListener('load', () => setTimeout(consoleEasterEgg, 1500));
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-  new LazyLoad({
-    elements_selector: ".lazyload",
-  })
-
-  objectFitImages(document.querySelectorAll('.cover-image'))
-
   const container = document.getElementById('works-container');
   if (container) {
     const works = Array.from(container.querySelectorAll('.work'));

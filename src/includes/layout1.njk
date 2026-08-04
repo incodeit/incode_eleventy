@@ -1,49 +1,58 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5WD342QX');</script>
-        <!-- End Google Tag Manager -->
-
-        <meta
-        charset="UTF-8"/> {# <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> #}
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Incode – You think. We build.</title>
-        
-        <!-- Add a favicon -->
-        <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
-        <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
+        <title>{% if title and title != "Home" %}{{ title }} – {% endif %}Incode – You think. We build.</title>
+        <meta name="description" content="Incode is an Italian creative studio specialising in full-stack development, UX/UI, websites and custom digital products.">
+
+        <!-- Favicon -->
+        <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.svg">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.svg">
-        
+
         <!-- Styles -->
         <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+
+        <!-- Google Tag Manager (deferred) -->
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function loadGTM() {
+          if (window.__gtmLoaded) return;
+          window.__gtmLoaded = true;
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5WD342QX');
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadGTM, { timeout: 3500 });
+        } else {
+          window.addEventListener('load', function () { setTimeout(loadGTM, 2000); });
+        }
+        </script>
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WD342QX"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         
         <main id="main" class="overflow-hidden" role="main">
             <header id="main-header" class="fixed top-0 right-0 left-0 z-[1000] mt-8 px-8 md:mt-16">
                 <div class="mx-auto flex max-w-full items-center min-[481px]:max-w-[96%]">
                     <div class="w-1/2">
-                        <a href="/" rel="home">
-                            <img alt="logo" src="/assets/logo.svg" class="align-top">
+                        <a href="/" rel="home" class="no-underline hover:no-underline" aria-label="Incode home">
+                            <img alt="Incode" src="/assets/logo.svg" width="135" height="36" class="h-9 w-auto">
                         </a>
                     </div>
-                    <nav class="w-1/2 text-right">
+                    <nav class="w-1/2 text-right" aria-label="Primary">
                         <ul id="primary-menu" class="m-0 hidden list-none p-0 phone:inline-block">
                             <li class="mx-4 inline-block p-0">
-                                <a href="/#latest-works" aria-current="page" class="text-[1.4rem] text-white no-underline hover:underline">Works</a>
+                                <a href="/#latest-works" class="text-[1.4rem] text-white no-underline hover:underline">Works</a>
                             </li>
                             <li class="mx-4 inline-block p-0">
-                                <a href="/#we-make-things" aria-current="page" class="text-[1.4rem] text-white no-underline hover:underline">About</a>
+                                <a href="/#we-make-things" class="text-[1.4rem] text-white no-underline hover:underline">About</a>
                             </li>
                         </ul>
                     </nav>
@@ -64,7 +73,7 @@
                                 Sede Legale: Via Montello 3/c, 46041 Asola MN
                             </div>
                             <div>
-                                Sede Operativa: Via dell'innovazione digitale 3 c/o <a href="https://co-box.it" target="_blank">Co-Box</a>, 26100 Cremona CR
+                                Sede Operativa: Via dell'innovazione digitale 3 c/o <a href="https://co-box.it" target="_blank" rel="noopener noreferrer">Co-Box</a>, 26100 Cremona CR
                             </div>
                             <div>
                                 Phone: <a href="tel:+390372027375">+39 0372 027375</a> - Email: <a href="mailto:info@incode.it">info@incode.it</a>
@@ -77,13 +86,13 @@
                         </div>
                         <ul class="footer__info m-0 flex list-none items-center justify-center p-0">
                             <li class="list-none px-4">
-                                <a href="https://www.iubenda.com/privacy-policy/39654979" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                                <a href="https://www.iubenda.com/privacy-policy/39654979" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle no-underline" title="Privacy Policy" rel="noopener noreferrer">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
                             </li>
                             <li class="list-none px-4">
-                                <a href="https://www.iubenda.com/privacy-policy/39654979/cookie-policy" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle" title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                                <a href="https://www.iubenda.com/privacy-policy/39654979/cookie-policy" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle no-underline" title="Cookie Policy" rel="noopener noreferrer">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
                             </li>
                             <li class="list-none px-4">
-                                <a href="https://siteparser.incode.it/static/websites/3/a11y-declaration-1-1eebea23c62088fe4ae47fedfb55a686-en.html" target="_blank" class="footer__policy-link inline-block" title="Accessibility Statement">Accessibility Statement</a>
+                                <a href="https://siteparser.incode.it/static/websites/3/a11y-declaration-1-1eebea23c62088fe4ae47fedfb55a686-en.html" target="_blank" rel="noopener noreferrer" class="footer__policy-link inline-block no-underline" title="Accessibility Statement">Accessibility Statement</a>
                             </li>
                         </ul>
                     </div>
@@ -91,14 +100,14 @@
             </footer>
         </main>
 
-        <!-- iubenda cookie banner -->
-        <script type="text/javascript">
+        <!-- iubenda cookie banner (async, after content) -->
+        <script>
         var _iub = _iub || [];
         _iub.csConfiguration = {"siteId":3883181,"cookiePolicyId":39654979,"lang":"en","storage":{"useSiteId":true}};
         </script>
-        <script type="text/javascript" src="//cs.iubenda.com/sync/3883181.js"></script>
-        <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
-        <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+        <script src="https://cs.iubenda.com/sync/3883181.js" defer></script>
+        <script src="https://cdn.iubenda.com/cs/gpp/stub.js" defer></script>
+        <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
         <script src="{{ '/main.js' | url }}" defer></script>
     </body>

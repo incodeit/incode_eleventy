@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import "@fontsource/kumbh-sans/latin-400.css";
+@import "@fontsource/kumbh-sans/latin-700.css";
 @import "tailwindcss";
 
 @source "../**/*.{njk,html,md,js}";
@@ -32,7 +33,7 @@
   }
 
   a {
-    @apply no-underline hover:underline;
+    @apply underline underline-offset-2 hover:text-white;
   }
 
   h1,
@@ -47,11 +48,15 @@
   p {
     @apply p-0;
   }
+
+  img {
+    @apply h-auto max-w-full;
+  }
 }
 
 @layer components {
   .button {
-    @apply inline-block rounded-full px-8 py-4 font-semibold tracking-[2px] text-white uppercase no-underline shadow-[0_3px_34px_0_rgba(0,0,0,0.3)] transition-all duration-300 will-change-auto hover:no-underline hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.2)];
+    @apply inline-block rounded-full px-8 py-4 font-semibold tracking-[2px] text-white uppercase no-underline shadow-[0_3px_34px_0_rgba(0,0,0,0.3)] transition-all duration-300 will-change-auto hover:text-white hover:no-underline hover:shadow-[0_3px_3px_0_rgba(0,0,0,0.2)];
     background-image: linear-gradient(-163deg, var(--color-brand-from) 0%, var(--color-brand-to) 89%);
   }
 

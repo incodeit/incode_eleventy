@@ -45,12 +45,7 @@
     "tailwindcss": "^4.3.3"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.2",
-    "gsap": "^3.11.4",
-    "object-fit-images": "^3.2.4",
-    "scrollmagic": "^2.0.8",
-    "scrollmagic-plugin-gsap": "^1.0.4",
-    "typed.js": "^2.0.12",
-    "vanilla-lazyload": "^17.8.3"
+    "@fontsource/kumbh-sans": "^5.3.0",
+    "typed.js": "^2.0.12"
   }
 }
