@@ -1,49 +1,58 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5WD342QX');</script>
-        <!-- End Google Tag Manager -->
-
-        <meta
-        charset="UTF-8"/> 
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Incode – You think. We build.</title>
-        
-        <!-- Add a favicon -->
-        <link rel="icon" href="/assets/favicon.svg" type="image/x-icon">
-        <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon">
+        <meta name="description" content="Incode is an Italian creative studio specialising in full-stack development, UX/UI, websites and custom digital products.">
+
+        <!-- Favicon -->
+        <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.svg">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.svg">
-        
+
         <!-- Styles -->
         <link rel="stylesheet" href="/css/index.css">
+
+        <!-- Google Tag Manager (deferred) -->
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function loadGTM() {
+          if (window.__gtmLoaded) return;
+          window.__gtmLoaded = true;
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-5WD342QX');
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadGTM, { timeout: 3500 });
+        } else {
+          window.addEventListener('load', function () { setTimeout(loadGTM, 2000); });
+        }
+        </script>
     </head>
     <body>
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WD342QX"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         
         <main id="main" class="overflow-hidden" role="main">
             <header id="main-header" class="fixed top-0 right-0 left-0 z-[1000] mt-8 px-8 md:mt-16">
                 <div class="mx-auto flex max-w-full items-center min-[481px]:max-w-[96%]">
                     <div class="w-1/2">
-                        <a href="/" rel="home">
-                            <img alt="logo" src="/assets/logo.svg" class="align-top">
+                        <a href="/" rel="home" class="no-underline hover:no-underline" aria-label="Incode home">
+                            <img alt="Incode" src="/assets/logo.svg" width="135" height="36" class="h-9 w-auto">
                         </a>
                     </div>
-                    <nav class="w-1/2 text-right">
+                    <nav class="w-1/2 text-right" aria-label="Primary">
                         <ul id="primary-menu" class="m-0 hidden list-none p-0 phone:inline-block">
                             <li class="mx-4 inline-block p-0">
-                                <a href="/#latest-works" aria-current="page" class="text-[1.4rem] text-white no-underline hover:underline">Works</a>
+                                <a href="/#latest-works" class="text-[1.4rem] text-white no-underline hover:underline">Works</a>
                             </li>
                             <li class="mx-4 inline-block p-0">
-                                <a href="/#we-make-things" aria-current="page" class="text-[1.4rem] text-white no-underline hover:underline">About</a>
+                                <a href="/#we-make-things" class="text-[1.4rem] text-white no-underline hover:underline">About</a>
                             </li>
                         </ul>
                     </nav>
@@ -51,7 +60,7 @@
             </header>
             <div id="primary" class="mx-auto max-w-full px-4 min-[481px]:max-w-[88%]">
                 
-<section id="hero" class=" min-h-screen clear-both">
+<section id="hero" class="relative min-h-screen">
   <header class="absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-4 text-center">
     <h1 class="mb-4 text-[2.8rem] leading-[1.2] whitespace-normal phone:text-[4rem] phone:whitespace-nowrap tablet:text-[6rem] tablet:leading-none">
       <span>
@@ -59,7 +68,7 @@
         <span class="hero__typewrite"></span>
       </span>
     </h1>
-    <div class="mx-auto max-w-[54rem] text-[1.8rem] phone:text-[1.8rem]">
+    <div class="mx-auto max-w-[54rem] text-[1.8rem]">
       <p class="m-0 p-0">We are an
         <strong>Italian</strong>
         <strong>creative</strong>
@@ -75,361 +84,350 @@
       <a class="button" href="mailto:info@incode.it">Contact us</a>
     </div>
   </header>
-  <div class="animate-bounce-hero absolute bottom-12 left-[calc(50%-1px)] z-0 h-12 w-0.5 bg-white/30"></div>
+  <div class="animate-bounce-hero absolute bottom-12 left-[calc(50%-1px)] z-0 h-12 w-0.5 bg-white/30" aria-hidden="true"></div>
 </section>
 
-<section id="latest-works" class="clear-both">
+<section id="latest-works">
   <header class="mt-16 px-4 text-center">
-    <h2 class=" mb-16 text-[1.8rem] leading-[1.2] phone:text-[2.6rem] phone:leading-none">
+    <h2 class="mb-16 text-[1.8rem] leading-[1.2] phone:text-[2.6rem] phone:leading-none">
       <span>Idea + Technology + Lean Design</span>
     </h2>
-    <p class="m-0 text-[1.25rem] phone:text-[1.5rem] [&_a]:text-white">Here's a random list of our works, <a href="javascript:location.reload()">refresh the page</a> to get more</p>
+    <p class="m-0 text-[1.25rem] phone:text-[1.5rem] [&_a]:text-white">Here's a random list of our works, <a href="/" onclick="location.reload(); return false;">refresh the page</a> to get more</p>
   </header>
-  <div id="works-container"><article class="work  mb-16 w-full clear-both px-4">
+  <div id="works-container"><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">DVArea</h1>
+          <h3 class="text-[1.8rem] font-normal">DVArea</h3>
           <span>Developed for DVArea.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://dvarea.com" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/dvarea/dvarea_desktop.webp" alt="DVArea" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://dvarea.com" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/dvarea/dvarea_desktop.webp" alt="DVArea" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://dvarea.com" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/dvarea/dvarea_mobile.webp" alt="DVArea" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://dvarea.com" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/dvarea/dvarea_mobile.webp" alt="DVArea" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Escapista</h1>
+          <h3 class="text-[1.8rem] font-normal">Escapista</h3>
           <span>Developed for Bluceleste.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://escapista.com/it" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/escapista/escapista_desktop.webp" alt="Escapista" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://escapista.com/it" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/escapista/escapista_desktop.webp" alt="Escapista" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://escapista.com/it" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/escapista/escapista_mobile.webp" alt="Escapista" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://escapista.com/it" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/escapista/escapista_mobile.webp" alt="Escapista" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">showREAL</h1>
+          <h3 class="text-[1.8rem] font-normal">showREAL</h3>
           <span>Developed for Yam112003.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://www.showreal.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/showreal/showreal_desktop.webp" alt="showREAL" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://www.showreal.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/showreal/showreal_desktop.webp" alt="showREAL" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://www.showreal.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/showreal/showreal_mobile.webp" alt="showREAL" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://www.showreal.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/showreal/showreal_mobile.webp" alt="showREAL" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Studio Notarile Mistretta</h1>
+          <h3 class="text-[1.8rem] font-normal">Studio Notarile Mistretta</h3>
           <span>Developed for 1STUDIO.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://www.notaiomistretta.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/mistretta/mistretta_desktop.webp" alt="Studio Notarile Mistretta" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://www.notaiomistretta.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/mistretta/mistretta_desktop.webp" alt="Studio Notarile Mistretta" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://www.notaiomistretta.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/mistretta/mistretta_mobile.webp" alt="Studio Notarile Mistretta" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://www.notaiomistretta.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/mistretta/mistretta_mobile.webp" alt="Studio Notarile Mistretta" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">CosmoIMD</h1>
+          <h3 class="text-[1.8rem] font-normal">CosmoIMD</h3>
           <span>Developed for CRSL Carosello Lab.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://cosmoimd.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/cosmoimd/cosmo_desktop.webp" alt="CosmoIMD" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://cosmoimd.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/cosmoimd/cosmo_desktop.webp" alt="CosmoIMD" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://cosmoimd.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/cosmoimd/cosmo_mobile.webp" alt="CosmoIMD" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://cosmoimd.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/cosmoimd/cosmo_mobile.webp" alt="CosmoIMD" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Arvedi Automotive</h1>
+          <h3 class="text-[1.8rem] font-normal">Arvedi Automotive</h3>
           <span>Front-end development, animations and product configurator for Gamm System.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://automotive.arvedi.it/it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/arvedi-automotive/arvedi_desktop.webp" alt="Arvedi Automotive" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://automotive.arvedi.it/it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/arvedi-automotive/arvedi_desktop.webp" alt="Arvedi Automotive" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://automotive.arvedi.it/it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/arvedi-automotive/arvedi_mobile.webp" alt="Arvedi Automotive" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://automotive.arvedi.it/it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/arvedi-automotive/arvedi_mobile.webp" alt="Arvedi Automotive" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">The Blender Magazine</h1>
+          <h3 class="text-[1.8rem] font-normal">The Blender Magazine</h3>
           <span>Developed for Yam112003.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://theblendermagazine.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/lavazza-theblender/blender_desktop.webp" alt="The Blender Magazine" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://theblendermagazine.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/lavazza-theblender/blender_desktop.webp" alt="The Blender Magazine" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://theblendermagazine.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/lavazza-theblender/blender_mobile.webp" alt="The Blender Magazine" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://theblendermagazine.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/lavazza-theblender/blender_mobile.webp" alt="The Blender Magazine" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Next Sport</h1>
+          <h3 class="text-[1.8rem] font-normal">Next Sport</h3>
           <span>Front-end and Shopify e-commerce development for 1Studio.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://nextsport.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/nextsport/nextsport_desktop.webp" alt="Next Sport" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://nextsport.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/nextsport/nextsport_desktop.webp" alt="Next Sport" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://nextsport.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/nextsport/nextsport_mobile.webp" alt="Next Sport" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://nextsport.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/nextsport/nextsport_mobile.webp" alt="Next Sport" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Alla Carta</h1>
+          <h3 class="text-[1.8rem] font-normal">Alla Carta</h3>
           <span></span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://allacarta.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/allacarta/allacarta_desktop.webp" alt="Alla Carta" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://allacarta.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/allacarta/allacarta_desktop.webp" alt="Alla Carta" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://allacarta.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/allacarta/allacarta_mobile.webp" alt="Alla Carta" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://allacarta.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/allacarta/allacarta_mobile.webp" alt="Alla Carta" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Surgital</h1>
+          <h3 class="text-[1.8rem] font-normal">Surgital</h3>
           <span>Developed for Yam112003</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://www.surgital.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/surgital/surgital_desktop.webp" alt="Surgital" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://www.surgital.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/surgital/surgital_desktop.webp" alt="Surgital" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://www.surgital.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/surgital/surgital_mobile.webp" alt="Surgital" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://www.surgital.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/surgital/surgital_mobile.webp" alt="Surgital" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Audiovisiva Educational</h1>
+          <h3 class="text-[1.8rem] font-normal">Audiovisiva Educational</h3>
           <span></span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://educational.audiovisiva.org/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/audiovisiva-educational/audiovisiva_desktop.webp" alt="Audiovisiva Educational" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://educational.audiovisiva.org/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/audiovisiva-educational/audiovisiva_desktop.webp" alt="Audiovisiva Educational" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://educational.audiovisiva.org/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/audiovisiva-educational/audiovisiva_mobile.webp" alt="Audiovisiva Educational" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://educational.audiovisiva.org/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/audiovisiva-educational/audiovisiva_mobile.webp" alt="Audiovisiva Educational" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Livingstone</h1>
+          <h3 class="text-[1.8rem] font-normal">Livingstone</h3>
           <span></span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://livingstone-tech.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/livingstone/livingstone_desktop.webp" alt="Livingstone" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://livingstone-tech.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/livingstone/livingstone_desktop.webp" alt="Livingstone" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://livingstone-tech.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/livingstone/livingstone_mobile.webp" alt="Livingstone" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://livingstone-tech.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/livingstone/livingstone_mobile.webp" alt="Livingstone" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Fileni, time sharing multietnico</h1>
+          <h3 class="text-[1.8rem] font-normal">Fileni, time sharing multietnico</h3>
           <span>Developed for Fileni.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://timesharingmultietnico.it" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/fileni/fileni_desktop.webp" alt="Fileni, time sharing multietnico" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://timesharingmultietnico.it" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/fileni/fileni_desktop.webp" alt="Fileni, time sharing multietnico" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://timesharingmultietnico.it" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/fileni/fileni_mobile.webp" alt="Fileni, time sharing multietnico" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://timesharingmultietnico.it" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/fileni/fileni_mobile.webp" alt="Fileni, time sharing multietnico" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Crit Research</h1>
+          <h3 class="text-[1.8rem] font-normal">Crit Research</h3>
           <span></span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://crit-research.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/crit/crit_desktop.webp" alt="Crit Research" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://crit-research.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/crit/crit_desktop.webp" alt="Crit Research" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://crit-research.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/crit/crit_mobile.webp" alt="Crit Research" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://crit-research.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/crit/crit_mobile.webp" alt="Crit Research" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Tre Marie</h1>
+          <h3 class="text-[1.8rem] font-normal">Tre Marie</h3>
           <span>Developed for YAM112003.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://tremarie.galbusera.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/tremarie/tremarie_desktop.webp" alt="Tre Marie" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://tremarie.galbusera.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/tremarie/tremarie_desktop.webp" alt="Tre Marie" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://tremarie.galbusera.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/tremarie/tremarie_mobile.webp" alt="Tre Marie" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://tremarie.galbusera.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/tremarie/tremarie_mobile.webp" alt="Tre Marie" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">RPN</h1>
+          <h3 class="text-[1.8rem] font-normal">RPN</h3>
           <span>Developed for Quiqueg.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://rpngroup.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/rpn/rpn_desktop.webp" alt="RPN" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://rpngroup.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/rpn/rpn_desktop.webp" alt="RPN" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://rpngroup.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/rpn/rpn_mobile.webp" alt="RPN" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://rpngroup.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/rpn/rpn_mobile.webp" alt="RPN" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Laba</h1>
+          <h3 class="text-[1.8rem] font-normal">Laba</h3>
           <span></span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://laba.edu/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/laba/laba_desktop.webp" alt="Laba" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://laba.edu/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/laba/laba_desktop.webp" alt="Laba" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://laba.edu/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/laba/laba_mobile.webp" alt="Laba" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://laba.edu/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/laba/laba_mobile.webp" alt="Laba" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Daniel Germani</h1>
+          <h3 class="text-[1.8rem] font-normal">Daniel Germani</h3>
           <span>Developed for Peterman.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://danielgermani.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/danielgermani/danielgermani_desktop.webp" alt="Daniel Germani" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://danielgermani.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/danielgermani/danielgermani_desktop.webp" alt="Daniel Germani" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://danielgermani.com/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/danielgermani/danielgermani_mobile.webp" alt="Daniel Germani" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://danielgermani.com/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/danielgermani/danielgermani_mobile.webp" alt="Daniel Germani" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Globus</h1>
+          <h3 class="text-[1.8rem] font-normal">Globus</h3>
           <span>Developed for Globus.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://globussrl.it" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/globus/globus_desktop.webp" alt="Globus" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://globussrl.it" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/globus/globus_desktop.webp" alt="Globus" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://globussrl.it" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/globus/globus_mobile.webp" alt="Globus" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://globussrl.it" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/globus/globus_mobile.webp" alt="Globus" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
-      </article><article class="work  mb-16 w-full clear-both px-4">
+      </article><article class="work mb-16 w-full px-4">
         <header class="mx-auto mt-16 mb-4 w-full">
-          <h1 class="text-[1.8rem] font-normal phone:text-[1.8rem]">Punt e Mes</h1>
+          <h3 class="text-[1.8rem] font-normal">Punt e Mes</h3>
           <span>Developed for YAM112003.</span>
         </header>
-        <div class=" mx-auto hidden w-full md:block">
-          <a href="https://www.puntemes.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/pem/pem_desktop.webp" alt="Punt e Mes" loading="lazy">
+        <div class="mx-auto hidden w-full md:block">
+          <a href="https://www.puntemes.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/pem/pem_desktop.webp" alt="Punt e Mes" width="2127" height="1065" loading="lazy" decoding="async">
           </a>
         </div>
-        <div class=" mx-auto block w-full md:hidden">
-          <a href="https://www.puntemes.it/" target="_blank">
-            <img class="w-full max-w-full align-top" src="assets/works/pem/pem_mobile.webp" alt="Punt e Mes" loading="lazy">
+        <div class="mx-auto block w-full md:hidden">
+          <a href="https://www.puntemes.it/" target="_blank" rel="noopener noreferrer">
+            <img class="w-full" src="/assets/works/pem/pem_mobile.webp" alt="Punt e Mes" width="909" height="1232" loading="lazy" decoding="async">
           </a>
         </div>
       </article></div>
 </section>
 
-<section id="we-make-things" class="">
+<section id="we-make-things">
   <header class="mt-16 md:px-8">
     <h2 class="mx-auto mb-4 w-full px-4 text-[1.8rem] leading-[1.2] md:w-5/6 md:px-0 phone:text-[2.6rem] phone:leading-none">
       <span>We make things.</span>
     </h2>
   </header>
   <article class="my-16 w-full md:px-8">
-    <div class="mx-auto w-full px-4 md:w-5/6 md:px-0 grid grid-cols-1 lg:grid-cols-2 gap-4">
-      <div class="mb-16 w-full ">
+    <div class="mx-auto grid w-full grid-cols-1 gap-4 px-4 md:w-5/6 md:px-0 lg:grid-cols-2">
+      <div class="mb-16 w-full">
         <h3 class="text-[1.8rem] font-normal">
           Tell us your idea.<br>
           If it exists, we’ll make it for you.<br>
            If it doesn’t, we’ll make it up.
         </h3>
       </div>
-      <div class="w-full ">
+      <div class="w-full">
         <div class="mb-6">
           <h3 class="text-[1.8rem] font-normal">Websites, E-commerce</h3>
           <p class="text-[1.2rem]">WordPress, WooCommerce, Drupal, Shopify</p>
         </div>
         <div class="mb-6"> 
-          <h3 class="text-[1.8rem] font-normal ">Custom projects</h3>
+          <h3 class="text-[1.8rem] font-normal">Custom projects</h3>
           <p class="text-[1.2rem]">Ruby/Rails, Node, Vue, architecture and integration</p>
         </div>
         <div class="mb-6">
-          <h3 class="text-[1.8rem] font-normal ">UX, UI</h3>
+          <h3 class="text-[1.8rem] font-normal">UX, UI</h3>
           <p class="text-[1.2rem]">Design, evaluation, assessment and consulting</p>
         </div>
       </div>
     </div>
   </article>
-</section>
-
-<section id="our-clients" class="mb-16 hidden clear-both">
-  <header class="mt-16 text-center md:px-8">
-    <div class="mx-auto w-full px-4 text-center md:w-5/6 md:px-0">
-      <div class="mb-4 text-center">
-        We’ve worked as developer, web designer or UX analyst for various agencies and their clients like:
-      </div>
-      <img class="mt-4 mb-16 hidden w-full max-w-full" src="" alt="Our Clients">
-    </div>
-  </header>
 </section>
 
             </div>
@@ -445,7 +443,7 @@
                                 Sede Legale: Via Montello 3/c, 46041 Asola MN
                             </div>
                             <div>
-                                Sede Operativa: Via dell'innovazione digitale 3 c/o <a href="https://co-box.it" target="_blank">Co-Box</a>, 26100 Cremona CR
+                                Sede Operativa: Via dell'innovazione digitale 3 c/o <a href="https://co-box.it" target="_blank" rel="noopener noreferrer">Co-Box</a>, 26100 Cremona CR
                             </div>
                             <div>
                                 Phone: <a href="tel:+390372027375">+39 0372 027375</a> - Email: <a href="mailto:info@incode.it">info@incode.it</a>
@@ -458,13 +456,13 @@
                         </div>
                         <ul class="footer__info m-0 flex list-none items-center justify-center p-0">
                             <li class="list-none px-4">
-                                <a href="https://www.iubenda.com/privacy-policy/39654979" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                                <a href="https://www.iubenda.com/privacy-policy/39654979" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle no-underline" title="Privacy Policy" rel="noopener noreferrer">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
                             </li>
                             <li class="list-none px-4">
-                                <a href="https://www.iubenda.com/privacy-policy/39654979/cookie-policy" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle" title="Cookie Policy ">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+                                <a href="https://www.iubenda.com/privacy-policy/39654979/cookie-policy" class="footer__policy-link inline-block iubenda-white iubenda-noiframe iubenda-embed iubenda-nostyle no-underline" title="Cookie Policy" rel="noopener noreferrer">Cookie Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
                             </li>
                             <li class="list-none px-4">
-                                <a href="https://siteparser.incode.it/static/websites/3/a11y-declaration-1-1eebea23c62088fe4ae47fedfb55a686-en.html" target="_blank" class="footer__policy-link inline-block" title="Accessibility Statement">Accessibility Statement</a>
+                                <a href="https://siteparser.incode.it/static/websites/3/a11y-declaration-1-1eebea23c62088fe4ae47fedfb55a686-en.html" target="_blank" rel="noopener noreferrer" class="footer__policy-link inline-block no-underline" title="Accessibility Statement">Accessibility Statement</a>
                             </li>
                         </ul>
                     </div>
@@ -472,14 +470,14 @@
             </footer>
         </main>
 
-        <!-- iubenda cookie banner -->
-        <script type="text/javascript">
+        <!-- iubenda cookie banner (async, after content) -->
+        <script>
         var _iub = _iub || [];
         _iub.csConfiguration = {"siteId":3883181,"cookiePolicyId":39654979,"lang":"en","storage":{"useSiteId":true}};
         </script>
-        <script type="text/javascript" src="//cs.iubenda.com/sync/3883181.js"></script>
-        <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
-        <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+        <script src="https://cs.iubenda.com/sync/3883181.js" defer></script>
+        <script src="https://cdn.iubenda.com/cs/gpp/stub.js" defer></script>
+        <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
         <script src="/main.js" defer></script>
     </body>
