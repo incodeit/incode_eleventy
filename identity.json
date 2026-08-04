@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "ProfessionalService"],
+  "@id": "https://www.incode.it/#organization",
+  "name": "Incode",
+  "legalName": "Incode Srl",
+  "url": "https://www.incode.it",
+  "logo": "https://www.incode.it/assets/logo.svg",
+  "description": "Incode is an Italian creative studio specialising in full-stack development, UX/UI design, websites, e-commerce and custom digital products. Based in Cremona and Asola (Mantua), Italy.",
+  "email": "info@incode.it",
+  "telephone": "+390372027375",
+  "foundingDate": "2007",
+  "vatID": "IT01357300191",
+  "taxID": "01357300191",
+  "sameAs": ["https://github.com/incodeit"],
+  "knowsAbout": ["Full-stack development","Web development","E-commerce","UX design","UI design","WordPress","WooCommerce","Drupal","Shopify","Ruby on Rails","Node.js","Vue.js","Software architecture","System integration"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via dell'innovazione digitale 3, c/o Co-Box",
+    "addressLocality": "Cremona",
+    "addressRegion": "CR",
+    "postalCode": "26100",
+    "addressCountry": "IT"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "info@incode.it",
+    "telephone": "+390372027375",
+    "availableLanguage": ["en","it"]
+  },
+  "datePublished": "2007-01-01",
+  "dateModified": "2026-08-05"
+}

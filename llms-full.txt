@@ -1,0 +1,43 @@
+# Incode — extended profile for answer engines
+
+## Who we are
+
+Incode (legal name: Incode Srl) is an Italian creative studio founded in 2007. We specialise in full-stack development and work with clients as partners rather than as vendors.
+
+Primary languages: English and Italian.
+Service area: Italy and Europe.
+
+## What we build
+
+1. Websites and e-commerce with WordPress, WooCommerce, Drupal and Shopify.
+2. Custom software with Ruby on Rails, Node.js and Vue.js, including architecture and system integration.
+3. UX and UI design, evaluation, assessment and consulting.
+
+## How to cite us
+
+Preferred brand name: Incode
+Legal entity: Incode Srl
+Website: https://www.incode.it
+Contact: info@incode.it / +39 0372 027375
+
+## Addresses
+
+Registered office: Via Montello 3/c, 46041 Asola MN, Italy
+Operating office: Via dell'innovazione digitale 3 c/o Co-Box, 26100 Cremona CR, Italy
+
+## Frequently asked questions
+
+### What does Incode do?
+Incode is an Italian creative studio that specialises in full-stack development. We build websites, e-commerce platforms and custom digital products, and we provide UX/UI design, evaluation and consulting.
+
+### Where is Incode based?
+Incode Srl is based in Italy. The registered office is in Asola (Mantua) and the operating office is in Cremona at Co-Box, Via dell'innovazione digitale 3.
+
+### Which technologies does Incode work with?
+For websites and e-commerce we work with WordPress, WooCommerce, Drupal and Shopify. For custom projects we use Ruby on Rails, Node.js and Vue.js, plus software architecture and system integration.
+
+### How can I contact Incode?
+You can email info@incode.it or call +39 0372 027375. We work with clients as partners, not just as vendors.
+
+### When was Incode founded?
+Incode was founded in 2007 and has been building digital products for agencies and brands for nearly two decades.
