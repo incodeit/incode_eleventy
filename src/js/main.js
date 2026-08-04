@@ -13,9 +13,9 @@ function shuffleArray(array) {
 
 async function consoleEasterEgg() {
   const logoStyle =
-    'color: #000; background: #fff; font-family: Impact, Haettenschweiler, "Arial Black", "Helvetica Neue", sans-serif; font-size: 64px; font-weight: 900; letter-spacing: 0.04em; padding: 16px 24px 8px; line-height: 1;';
+    'color: #000; background: #fff; font-family: Impact, Haettenschweiler, "Arial Black", "Helvetica Neue", sans-serif; font-size: 64px; font-weight: 900; letter-spacing: 0.04em; padding: 16px 12px 8px; line-height: 1;';
   const textStyle =
-    'color: #000; background: #fff; font-family: Courier, "Courier New", monospace; font-size: 13px; padding: 8px 24px 16px;';
+    'color: #000; background: #fff; font-family: Courier, "Courier New", monospace; font-size: 12px; padding: 8px 12px 16px;';
 
   let body =
     "Hello everyone, it's great that you've come to visit us here :-) drop us a line at info@incode.it\nand remember:";
