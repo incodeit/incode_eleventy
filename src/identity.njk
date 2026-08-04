@@ -1,0 +1,36 @@
+---
+permalink: /identity.json
+eleventyExcludeFromCollections: true
+---
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "ProfessionalService"],
+  "@id": "{{ site.url }}/#organization",
+  "name": {{ site.name | dump | safe }},
+  "legalName": {{ site.legalName | dump | safe }},
+  "url": {{ site.url | dump | safe }},
+  "logo": {{ site.logo | dump | safe }},
+  "description": {{ site.description | dump | safe }},
+  "email": {{ site.email | dump | safe }},
+  "telephone": {{ site.telephone | dump | safe }},
+  "foundingDate": {{ site.foundingDate | dump | safe }},
+  "vatID": {{ site.vatID | dump | safe }},
+  "taxID": {{ site.taxID | dump | safe }},
+  "sameAs": {{ site.sameAs | dump | safe }},
+  "knowsAbout": {{ site.knowsAbout | dump | safe }},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ site.officeAddress.streetAddress | dump | safe }},
+    "addressLocality": {{ site.officeAddress.addressLocality | dump | safe }},
+    "addressRegion": {{ site.officeAddress.addressRegion | dump | safe }},
+    "postalCode": {{ site.officeAddress.postalCode | dump | safe }},
+    "addressCountry": {{ site.officeAddress.addressCountry | dump | safe }}
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": {{ site.email | dump | safe }},
+    "telephone": {{ site.telephone | dump | safe }},
+    "availableLanguage": {{ site.languages | dump | safe }}
+  }
+}

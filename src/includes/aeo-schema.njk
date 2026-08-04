@@ -1,0 +1,129 @@
+{%- set orgId = site.url + "/#organization" -%}
+{%- set websiteId = site.url + "/#website" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": {{ orgId | dump | safe }},
+      "name": {{ site.name | dump | safe }},
+      "legalName": {{ site.legalName | dump | safe }},
+      "url": {{ site.url | dump | safe }},
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ site.logo | dump | safe }}
+      },
+      "image": {{ site.logo | dump | safe }},
+      "description": {{ site.description | dump | safe }},
+      "email": {{ site.email | dump | safe }},
+      "telephone": {{ site.telephone | dump | safe }},
+      "foundingDate": {{ site.foundingDate | dump | safe }},
+      "vatID": {{ site.vatID | dump | safe }},
+      "taxID": {{ site.taxID | dump | safe }},
+      "priceRange": {{ site.priceRange | dump | safe }},
+      "knowsAbout": {{ site.knowsAbout | dump | safe }},
+      "sameAs": {{ site.sameAs | dump | safe }},
+      "areaServed": [
+        {%- for area in site.areaServed -%}
+        { "@type": "Place", "name": {{ area | dump | safe }} }{% if not loop.last %},{% endif %}
+        {%- endfor -%}
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ site.officeAddress.streetAddress | dump | safe }},
+        "addressLocality": {{ site.officeAddress.addressLocality | dump | safe }},
+        "addressRegion": {{ site.officeAddress.addressRegion | dump | safe }},
+        "postalCode": {{ site.officeAddress.postalCode | dump | safe }},
+        "addressCountry": {{ site.officeAddress.addressCountry | dump | safe }}
+      },
+      "location": {
+        "@type": "PostalAddress",
+        "streetAddress": {{ site.legalAddress.streetAddress | dump | safe }},
+        "addressLocality": {{ site.legalAddress.addressLocality | dump | safe }},
+        "addressRegion": {{ site.legalAddress.addressRegion | dump | safe }},
+        "postalCode": {{ site.legalAddress.postalCode | dump | safe }},
+        "addressCountry": {{ site.legalAddress.addressCountry | dump | safe }}
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": {{ site.email | dump | safe }},
+        "telephone": {{ site.telephone | dump | safe }},
+        "availableLanguage": {{ site.languages | dump | safe }}
+      },
+      "makesOffer": [
+        {%- for service in site.services -%}
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": {{ service.name | dump | safe }},
+            "description": {{ service.description | dump | safe }},
+            "provider": { "@id": {{ orgId | dump | safe }} }
+          }
+        }{% if not loop.last %},{% endif %}
+        {%- endfor -%}
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ websiteId | dump | safe }},
+      "url": {{ site.url | dump | safe }},
+      "name": {{ site.name | dump | safe }},
+      "description": {{ site.descriptionShort | dump | safe }},
+      "inLanguage": "en",
+      "publisher": { "@id": {{ orgId | dump | safe }} }
+    }
+    {%- if page.url == "/" -%}
+    ,{
+      "@type": "WebPage",
+      "@id": {{ (site.url + "/#webpage") | dump | safe }},
+      "url": {{ site.url | dump | safe }},
+      "name": {{ (site.name + " – " + site.tagline) | dump | safe }},
+      "description": {{ site.description | dump | safe }},
+      "isPartOf": { "@id": {{ websiteId | dump | safe }} },
+      "about": { "@id": {{ orgId | dump | safe }} },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": {{ site.logo | dump | safe }}
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#hero h1", "#hero p", "#aeo-faq"]
+      },
+      "mainEntity": { "@id": {{ orgId | dump | safe }} }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": {{ (site.url + "/#faq") | dump | safe }},
+      "url": {{ (site.url + "/#aeo-faq") | dump | safe }},
+      "mainEntity": [
+        {%- for item in faq.items -%}
+        {
+          "@type": "Question",
+          "name": {{ item.question | dump | safe }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ item.answer | dump | safe }}
+          }
+        }{% if not loop.last %},{% endif %}
+        {%- endfor -%}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ (site.url + "/#breadcrumb") | dump | safe }},
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": {{ site.url | dump | safe }}
+        }
+      ]
+    }
+    {%- endif -%}
+  ]
+}
+</script>

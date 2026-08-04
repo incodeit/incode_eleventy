@@ -1,0 +1,32 @@
+# Incode
+
+> Italian creative studio specialising in full-stack development, UX/UI, websites, e-commerce and custom digital products.
+
+Incode (Incode Srl) builds digital products with agencies and brands. Founded in 2007. Operating office in Cremona, Italy; registered office in Asola (Mantua), Italy.
+
+Tagline: You think. We build.
+
+## Contact
+
+- Website: https://www.incode.it
+- Email: info@incode.it
+- Phone: +39 0372 027375
+- VAT: IT01357300191
+
+## Services
+
+- Websites & E-commerce — WordPress, WooCommerce, Drupal, Shopify
+- Custom projects — Ruby on Rails, Node.js, Vue.js, architecture and integration
+- UX & UI — design, evaluation, assessment and consulting
+
+## Key pages
+
+- [Home](https://www.incode.it/): Overview, selected works and services
+- [State aid disclosure](https://www.incode.it/aiuti-stato/): Italian transparency disclosure (L. 124/2017)
+- [Privacy Policy](https://www.iubenda.com/privacy-policy/39654979): Privacy policy
+- [Cookie Policy](https://www.iubenda.com/privacy-policy/39654979/cookie-policy): Cookie policy
+- [Machine identity](https://www.incode.it/identity.json): Structured organization identity for AI systems
+
+## Optional
+
+- [llms-full.txt](https://www.incode.it/llms-full.txt): Extended company profile for answer engines

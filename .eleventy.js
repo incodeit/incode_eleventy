@@ -4,9 +4,15 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 module.exports = function(config) {
   config.addPassthroughCopy('src/assets')
+  config.addPassthroughCopy('src/llms.txt')
+  config.addPassthroughCopy('src/llms-full.txt')
+  config.addPassthroughCopy('src/robots.txt')
   config.addWatchTarget("./src/");
   config.addWatchTarget("./src/css");
   config.addLayoutAlias("layout1", "layout1.njk");
+
+  // Safe JSON for AEO schema templates
+  config.addFilter("dump", (value) => JSON.stringify(value));
 
   config.addPlugin(EleventyRenderPlugin);
 

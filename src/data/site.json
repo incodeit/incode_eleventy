@@ -1,0 +1,65 @@
+{
+  "name": "Incode",
+  "legalName": "Incode Srl",
+  "tagline": "You think. We build.",
+  "url": "https://www.incode.it",
+  "logo": "https://www.incode.it/assets/logo.svg",
+  "description": "Incode is an Italian creative studio specialising in full-stack development, UX/UI design, websites, e-commerce and custom digital products. Based in Cremona and Asola (Mantua), Italy.",
+  "descriptionShort": "Italian creative studio for full-stack development, UX/UI, websites and custom digital products.",
+  "email": "info@incode.it",
+  "telephone": "+390372027375",
+  "telephoneDisplay": "+39 0372 027375",
+  "foundingDate": "2007",
+  "vatID": "IT01357300191",
+  "taxID": "01357300191",
+  "priceRange": "$$",
+  "areaServed": ["Italy", "Europe"],
+  "knowsAbout": [
+    "Full-stack development",
+    "Web development",
+    "E-commerce",
+    "UX design",
+    "UI design",
+    "WordPress",
+    "WooCommerce",
+    "Drupal",
+    "Shopify",
+    "Ruby on Rails",
+    "Node.js",
+    "Vue.js",
+    "Software architecture",
+    "System integration"
+  ],
+  "sameAs": [
+    "https://github.com/incodeit"
+  ],
+  "legalAddress": {
+    "streetAddress": "Via Montello 3/c",
+    "addressLocality": "Asola",
+    "addressRegion": "MN",
+    "postalCode": "46041",
+    "addressCountry": "IT"
+  },
+  "officeAddress": {
+    "streetAddress": "Via dell'innovazione digitale 3, c/o Co-Box",
+    "addressLocality": "Cremona",
+    "addressRegion": "CR",
+    "postalCode": "26100",
+    "addressCountry": "IT"
+  },
+  "services": [
+    {
+      "name": "Websites & E-commerce",
+      "description": "Design and development of websites and online stores with WordPress, WooCommerce, Drupal and Shopify."
+    },
+    {
+      "name": "Custom software projects",
+      "description": "Custom full-stack applications with Ruby on Rails, Node.js, Vue.js, architecture and system integration."
+    },
+    {
+      "name": "UX & UI",
+      "description": "User experience and interface design, evaluation, assessment and consulting."
+    }
+  ],
+  "languages": ["en", "it"]
+}
