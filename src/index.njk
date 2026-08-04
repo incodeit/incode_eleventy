@@ -2,6 +2,8 @@
 layout: layout1
 title: Home
 permalink: '/'
+datePublished: "2007-01-01"
+dateModified: "2026-08-05"
 ---
 
 <section id="hero" class="relative min-h-screen">
@@ -115,4 +117,32 @@ permalink: '/'
       </details>
     {%- endfor -%}
   </div>
+</section>
+
+<section id="aeo-howto" class="mb-24" aria-labelledby="howto-heading">
+  <header class="mt-16 px-4 text-center md:px-8">
+    <h2 id="howto-heading" class="mb-8 text-[1.8rem] leading-[1.2] phone:text-[2.6rem] phone:leading-none">
+      How to start a project with Incode
+    </h2>
+    <p class="mx-auto m-0 max-w-[54rem] text-[1.25rem] phone:text-[1.5rem]">
+      Simple steps to begin a website, e-commerce or custom software project with us.
+    </p>
+  </header>
+  <ol class="mx-auto mt-12 w-full max-w-[54rem] list-decimal space-y-8 px-4 md:px-0">
+    <li class="ml-6 text-[1.2rem]">
+      <strong class="text-white">Share your idea</strong>
+      <p class="mt-2 m-0 text-[1.1rem] text-white/70">Email <a href="mailto:info@incode.it">info@incode.it</a> with your product idea, goals and timeline.</p>
+    </li>
+    <li class="ml-6 text-[1.2rem]">
+      <strong class="text-white">Align on scope</strong>
+      <p class="mt-2 m-0 text-[1.1rem] text-white/70">We review requirements together and define UX, technology stack and delivery plan.</p>
+    </li>
+    <li class="ml-6 text-[1.2rem]">
+      <strong class="text-white">Build and iterate</strong>
+      <p class="mt-2 m-0 text-[1.1rem] text-white/70">We design, develop and ship websites, e-commerce or custom full-stack products with you as a partner.</p>
+    </li>
+  </ol>
+  <p class="mx-auto mt-10 max-w-[54rem] px-4 text-center text-sm text-white/40 md:px-0">
+    <time datetime="{{ dateModified or site.dateModified }}">Last updated {{ dateModified or site.dateModified }}</time>
+  </p>
 </section>

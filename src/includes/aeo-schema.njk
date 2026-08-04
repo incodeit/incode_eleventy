@@ -1,5 +1,13 @@
 {%- set orgId = site.url + "/#organization" -%}
 {%- set websiteId = site.url + "/#website" -%}
+{%- set pageUrl = site.url + page.url -%}
+{%- set pageId = pageUrl + "#webpage" -%}
+{%- set published = datePublished or site.datePublished -%}
+{%- set modified = dateModified or site.dateModified -%}
+{%- set pageTitle = title if title and title != "Home" else (site.name + " – " + site.tagline) -%}
+{%- set pageDescription = description or site.descriptionShort -%}
+{%- set isHome = page.url == "/" -%}
+{%- set isAiuti = page.url == "/aiuti-stato/" -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -73,31 +81,77 @@
       "name": {{ site.name | dump | safe }},
       "description": {{ site.descriptionShort | dump | safe }},
       "inLanguage": "en",
+      "datePublished": {{ site.datePublished | dump | safe }},
+      "dateModified": {{ site.dateModified | dump | safe }},
       "publisher": { "@id": {{ orgId | dump | safe }} }
-    }
-    {%- if page.url == "/" -%}
-    ,{
+    },
+    {
       "@type": "WebPage",
-      "@id": {{ (site.url + "/#webpage") | dump | safe }},
-      "url": {{ site.url | dump | safe }},
-      "name": {{ (site.name + " – " + site.tagline) | dump | safe }},
-      "description": {{ site.description | dump | safe }},
+      "@id": {{ pageId | dump | safe }},
+      "url": {{ pageUrl | dump | safe }},
+      "name": {{ pageTitle | dump | safe }},
+      "description": {{ pageDescription | dump | safe }},
       "isPartOf": { "@id": {{ websiteId | dump | safe }} },
       "about": { "@id": {{ orgId | dump | safe }} },
+      "datePublished": {{ published | dump | safe }},
+      "dateModified": {{ modified | dump | safe }},
+      "inLanguage": {% if isAiuti %}"it"{% else %}"en"{% endif %},
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": {{ site.logo | dump | safe }}
-      },
-      "speakable": {
+      }
+      {%- if isHome -%}
+      ,      "speakable": {
         "@type": "SpeakableSpecification",
-        "cssSelector": ["#hero h1", "#hero p", "#aeo-faq"]
+        "cssSelector": ["#hero h1", "#hero p", "#aeo-faq", "#aeo-howto"]
       },
       "mainEntity": { "@id": {{ orgId | dump | safe }} }
+      {%- endif -%}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ (pageUrl + "#breadcrumb") | dump | safe }},
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": {{ site.url | dump | safe }}
+        }
+        {%- if not isHome -%}
+        ,{
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ pageTitle | dump | safe }},
+          "item": {{ pageUrl | dump | safe }}
+        }
+        {%- endif -%}
+      ]
+    }
+    {%- if isHome -%}
+    ,{
+      "@type": "Article",
+      "@id": {{ (site.url + "/#article") | dump | safe }},
+      "headline": {{ (site.name + " – " + site.tagline) | dump | safe }},
+      "description": {{ site.description | dump | safe }},
+      "url": {{ site.url | dump | safe }},
+      "image": {{ site.logo | dump | safe }},
+      "datePublished": {{ site.datePublished | dump | safe }},
+      "dateModified": {{ site.dateModified | dump | safe }},
+      "inLanguage": "en",
+      "author": { "@id": {{ orgId | dump | safe }} },
+      "publisher": { "@id": {{ orgId | dump | safe }} },
+      "mainEntityOfPage": { "@id": {{ pageId | dump | safe }} },
+      "about": { "@id": {{ orgId | dump | safe }} },
+      "articleSection": "Company",
+      "keywords": {{ site.knowsAbout | join(", ") | dump | safe }}
     },
     {
       "@type": "FAQPage",
       "@id": {{ (site.url + "/#faq") | dump | safe }},
       "url": {{ (site.url + "/#aeo-faq") | dump | safe }},
+      "datePublished": {{ site.datePublished | dump | safe }},
+      "dateModified": {{ site.dateModified | dump | safe }},
       "mainEntity": [
         {%- for item in faq.items -%}
         {
@@ -112,16 +166,51 @@
       ]
     },
     {
-      "@type": "BreadcrumbList",
-      "@id": {{ (site.url + "/#breadcrumb") | dump | safe }},
-      "itemListElement": [
+      "@type": "HowTo",
+      "@id": {{ (site.url + "/#howto") | dump | safe }},
+      "name": "How to start a project with Incode",
+      "description": "Simple steps to begin a website, e-commerce or custom software project with Incode.",
+      "datePublished": {{ site.datePublished | dump | safe }},
+      "dateModified": {{ site.dateModified | dump | safe }},
+      "totalTime": "P3D",
+      "step": [
         {
-          "@type": "ListItem",
+          "@type": "HowToStep",
           "position": 1,
-          "name": "Home",
-          "item": {{ site.url | dump | safe }}
+          "name": "Share your idea",
+          "text": "Email info@incode.it with your product idea, goals and timeline."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Align on scope",
+          "text": "We review requirements together and define UX, technology stack and delivery plan."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Build and iterate",
+          "text": "We design, develop and ship websites, e-commerce or custom full-stack products with you as a partner."
         }
       ]
+    }
+    {%- endif -%}
+    {%- if isAiuti -%}
+    ,{
+      "@type": "Article",
+      "@id": {{ (pageUrl + "#article") | dump | safe }},
+      "headline": {{ pageTitle | dump | safe }},
+      "description": {{ pageDescription | dump | safe }},
+      "url": {{ pageUrl | dump | safe }},
+      "image": {{ site.logo | dump | safe }},
+      "datePublished": {{ published | dump | safe }},
+      "dateModified": {{ modified | dump | safe }},
+      "inLanguage": "it",
+      "author": { "@id": {{ orgId | dump | safe }} },
+      "publisher": { "@id": {{ orgId | dump | safe }} },
+      "mainEntityOfPage": { "@id": {{ pageId | dump | safe }} },
+      "articleSection": "Legal",
+      "about": "Aiuti di Stato – trasparenza L. 124/2017"
     }
     {%- endif -%}
   ]
