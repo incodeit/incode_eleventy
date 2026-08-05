@@ -1,12 +1,16 @@
+{%- set pageLang = lang or "en" -%}
+{%- set titlePrefix = (title + " – ") if (title and title != "Home") else "" -%}
+{%- set metaTitleResolved = metaTitle or (titlePrefix + site.name + " – " + site.tagline) -%}
+{%- set metaDescription = description or site.descriptionShort -%}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ pageLang }}">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{% if title and title != "Home" %}{{ title }} – {% endif %}{{ site.name }} – {{ site.tagline }}</title>
-        <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.descriptionShort }}{% endif %}">
+        <title>{{ metaTitleResolved }}</title>
+        <meta name="description" content="{{ metaDescription }}">
         <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <meta name="robots" content="{% if noindex %}noindex, follow{% else %}index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1{% endif %}">
         <meta name="author" content="{{ site.legalName }}">
         <meta name="theme-color" content="#171921">
         <meta property="article:published_time" content="{{ datePublished or site.datePublished }}">
@@ -16,18 +20,23 @@
         <!-- Open Graph -->
         <meta property="og:type" content="{% if page.url == '/aiuti-stato/' %}article{% else %}website{% endif %}">
         <meta property="og:site_name" content="{{ site.name }}">
-        <meta property="og:locale" content="{% if page.url == '/aiuti-stato/' %}it_IT{% else %}en_US{% endif %}">
-        <meta property="og:title" content="{% if title and title != "Home" %}{{ title }} – {% endif %}{{ site.name }} – {{ site.tagline }}">
-        <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.descriptionShort }}{% endif %}">
+        <meta property="og:locale" content="{% if pageLang == 'it' %}it_IT{% else %}en_US{% endif %}">
+        <meta property="og:title" content="{{ metaTitleResolved }}">
+        <meta property="og:description" content="{{ metaDescription }}">
         <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-        <meta property="og:image" content="{{ site.logo }}">
+        <meta property="og:image" content="{{ site.ogImage }}">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:alt" content="{{ site.name }} – {{ site.tagline }}">
         <meta property="og:updated_time" content="{{ dateModified or site.dateModified }}">
 
         <!-- Twitter -->
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="{% if title and title != "Home" %}{{ title }} – {% endif %}{{ site.name }} – {{ site.tagline }}">
-        <meta name="twitter:description" content="{% if description %}{{ description }}{% else %}{{ site.descriptionShort }}{% endif %}">
-        <meta name="twitter:image" content="{{ site.logo }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ metaTitleResolved }}">
+        <meta name="twitter:description" content="{{ metaDescription }}">
+        <meta name="twitter:image" content="{{ site.ogImage }}">
+        <meta name="twitter:image:alt" content="{{ site.name }} – {{ site.tagline }}">
 
         <!-- AEO / AI discovery -->
         <link rel="alternate" type="text/plain" title="llms.txt" href="{{ site.url }}/llms.txt">

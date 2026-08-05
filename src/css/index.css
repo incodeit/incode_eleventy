@@ -7,8 +7,8 @@
 @theme {
   --font-sans: "Kumbh Sans", sans-serif;
   --color-surface: #171921;
-  --color-brand-from: #f55648;
-  --color-brand-to: #d02868;
+  --color-brand-from: #3b82f6;
+  --color-brand-to: #1e3a8a;
   /* min-width breakpoints (mobile-first) */
   --breakpoint-phone: 40.625rem; /* 650px */
   --breakpoint-tablet: 61.875rem; /* 990px */

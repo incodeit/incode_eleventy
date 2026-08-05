@@ -4,7 +4,8 @@
   "tagline": "You think. We build.",
   "url": "https://www.incode.it",
   "logo": "https://www.incode.it/assets/logo.svg",
-  "description": "Incode is an Italian creative studio specialising in full-stack development, UX/UI design, websites, e-commerce and custom digital products. Based in Cremona and Asola (Mantua), Italy.",
+  "ogImage": "https://www.incode.it/assets/og-image.png",
+  "description": "Incode is an Italian creative studio founded in 2007, specialising in full-stack development, e-commerce, custom web applications, UX/UI design and UX research. Based in Cremona and Asola (Mantua), Italy, Incode also works as a white-label development partner for agencies across Italy and Europe.",
   "descriptionShort": "Italian creative studio for full-stack development, UX/UI, websites and custom digital products.",
   "email": "info@incode.it",
   "telephone": "+390372027375",
@@ -17,18 +18,38 @@
   "knowsAbout": [
     "Full-stack development",
     "Web development",
+    "Custom web applications",
     "E-commerce",
+    "B2B e-commerce",
+    "Wholesale portals",
     "UX design",
     "UI design",
+    "UX research",
+    "Usability testing",
+    "Heuristic evaluation",
+    "Design systems",
+    "Figma",
     "WordPress",
     "WooCommerce",
     "Drupal",
+    "Drupal Commerce",
+    "Drupal migration",
     "Shopify",
+    "PrestaShop",
     "Ruby on Rails",
     "Node.js",
     "Vue.js",
+    "Astro",
     "Software architecture",
-    "System integration"
+    "System integration",
+    "CMS migration",
+    "Replatforming",
+    "White-label development",
+    "Website maintenance and support",
+    "Product configurators",
+    "Data dashboards",
+    "Geoportals",
+    "LLM-based tools"
   ],
   "sameAs": [
     "https://github.com/incodeit"
@@ -41,7 +62,7 @@
     "addressCountry": "IT"
   },
   "officeAddress": {
-    "streetAddress": "Via dell'innovazione digitale 3, c/o Co-Box",
+    "streetAddress": "Via dell'Innovazione Digitale 3, c/o Co-Box",
     "addressLocality": "Cremona",
     "addressRegion": "CR",
     "postalCode": "26100",
@@ -50,15 +71,31 @@
   "services": [
     {
       "name": "Websites & E-commerce",
-      "description": "Design and development of websites and online stores with WordPress, WooCommerce, Drupal and Shopify."
+      "description": "Design and development of websites and online stores with WordPress, WooCommerce, Drupal, Drupal Commerce and Shopify, including B2B and wholesale portals with customer-specific catalogues and price lists."
     },
     {
       "name": "Custom software projects",
-      "description": "Custom full-stack applications with Ruby on Rails, Node.js, Vue.js, architecture and system integration."
+      "description": "Custom full-stack applications with Ruby on Rails, Node.js, Vue.js and Astro: management platforms, product configurators, booking systems, data dashboards, geoportals and LLM-based tools, including architecture and system integration."
     },
     {
-      "name": "UX & UI",
-      "description": "User experience and interface design, evaluation, assessment and consulting."
+      "name": "UX & UI design",
+      "description": "User experience and interface design in Figma, including design systems, component libraries and documented component guidelines, delivered standalone or as the first phase of a project Incode develops."
+    },
+    {
+      "name": "UX research & usability testing",
+      "description": "Heuristic evaluations, moderated usability tests, benchmarking studies, A/B tests and metric-based testing, run since 2018 for organisations in banking, insurance, energy, telecommunications, travel, retail and publishing."
+    },
+    {
+      "name": "White-label development for agencies",
+      "description": "Technical subcontracting for agencies and studios under their brand, from front-end and CMS development to complete back-end builds, with Incode handling architecture, development and release."
+    },
+    {
+      "name": "Migration & replatforming",
+      "description": "Takeover of sites built by other suppliers: codebase and infrastructure audit, restyling, replatforming, content migration from legacy CMS installations and Drupal 7, 8 and 9 upgrades to Drupal 11."
+    },
+    {
+      "name": "Maintenance & technical support",
+      "description": "Continuous technical support, security updates, CMS version upgrades and incremental development for sites already in production, including platforms Incode did not originally build."
     }
   ],
   "languages": ["en", "it"],

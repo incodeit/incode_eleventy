@@ -18,6 +18,52 @@ eleventyExcludeFromCollections: true
   "taxID": {{ site.taxID | dump | safe }},
   "sameAs": {{ site.sameAs | dump | safe }},
   "knowsAbout": {{ site.knowsAbout | dump | safe }},
+  "priceRange": {{ site.priceRange | dump | safe }},
+  "areaServed": [
+    {%- for area in site.areaServed -%}
+    { "@type": "Place", "name": {{ area | dump | safe }} }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ],
+  "makesOffer": [
+    {%- for service in site.services -%}
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": {{ service.name | dump | safe }},
+        "description": {{ service.description | dump | safe }},
+        "provider": { "@id": "{{ site.url }}/#organization" }
+      }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ],
+  "subjectOf": [
+    {
+      "@type": "WebContent",
+      "name": "llms.txt",
+      "url": "{{ site.url }}/llms.txt",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "WebContent",
+      "name": "llms-full.txt",
+      "url": "{{ site.url }}/llms-full.txt",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "{{ site.url }}/#faq",
+      "url": "{{ site.url }}/#aeo-faq"
+    }
+  ],
+  "location": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ site.legalAddress.streetAddress | dump | safe }},
+    "addressLocality": {{ site.legalAddress.addressLocality | dump | safe }},
+    "addressRegion": {{ site.legalAddress.addressRegion | dump | safe }},
+    "postalCode": {{ site.legalAddress.postalCode | dump | safe }},
+    "addressCountry": {{ site.legalAddress.addressCountry | dump | safe }}
+  },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": {{ site.officeAddress.streetAddress | dump | safe }},
