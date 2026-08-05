@@ -27,7 +27,7 @@ dateModified: "2026-08-05"
         <strong>them</strong>, rather than for them.</p>
     </div>
     <div class="mt-8 sm:mt-16">
-      <a class="button" href="mailto:info@incode.it">Contact us</a>
+      {% email_link "Contact us", "button" %}
     </div>
   </header>
   <div class="animate-bounce-hero absolute bottom-12 left-[calc(50%-1px)] z-0 h-12 w-0.5 bg-white/30" aria-hidden="true"></div>
@@ -113,7 +113,7 @@ dateModified: "2026-08-05"
             <span class="text-white/40 transition group-open:rotate-45" aria-hidden="true">+</span>
           </div>
         </summary>
-        <p class="mt-4 m-0 text-[1.1rem] leading-relaxed text-white/70">{{ item.answer }}</p>
+        <p class="mt-4 m-0 text-[1.1rem] leading-relaxed text-white/70">{{ item.answer | protectEmails | safe }}</p>
       </details>
     {%- endfor -%}
   </div>
@@ -131,7 +131,7 @@ dateModified: "2026-08-05"
   <ol class="mx-auto mt-12 w-full  list-decimal space-y-8 px-4 md:px-0">
     <li class="ml-6 text-[1.2rem]">
       <strong class="text-white">Share your idea</strong>
-      <p class="mt-2 m-0 text-[1.1rem] text-white/70">Email <a href="mailto:info@incode.it">info@incode.it</a> with your product idea, goals and timeline.</p>
+      <p class="mt-2 m-0 text-[1.1rem] text-white/70">Email {% email_link %} with your product idea, goals and timeline.</p>
     </li>
     <li class="ml-6 text-[1.2rem]">
       <strong class="text-white">Align on scope</strong>

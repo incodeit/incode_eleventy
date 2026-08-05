@@ -9,6 +9,22 @@ function shuffleArray(array) {
   return arr;
 }
 
+function revealEmails() {
+  document.querySelectorAll("[data-email]").forEach((el) => {
+    try {
+      const email = atob(el.getAttribute("data-email"));
+      el.setAttribute("href", `mailto:${email}`);
+      if (el.hasAttribute("data-email-show")) {
+        el.textContent = email;
+      }
+      el.removeAttribute("data-email");
+      el.removeAttribute("data-email-show");
+    } catch {
+      // ignore malformed payloads
+    }
+  });
+}
+
 async function consoleEasterEgg() {
   const logoStyle =
     'color: #000; background: #fff; font-family: Impact, Haettenschweiler, "Arial Black", "Helvetica Neue", sans-serif; font-size: 64px; font-weight: 900; letter-spacing: 0.04em; padding: 16px 12px 8px; line-height: 1;';
@@ -40,6 +56,8 @@ if ('requestIdleCallback' in window) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  revealEmails();
+
   const container = document.getElementById('works-container');
   if (container) {
     const works = Array.from(container.querySelectorAll('.work'));
