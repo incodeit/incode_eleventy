@@ -6,17 +6,103 @@
   "legalName": "Incode Srl",
   "url": "https://www.incode.it",
   "logo": "https://www.incode.it/assets/logo.svg",
-  "description": "Incode is an Italian creative studio specialising in full-stack development, UX/UI design, websites, e-commerce and custom digital products. Based in Cremona and Asola (Mantua), Italy.",
+  "description": "Incode is an Italian creative studio founded in 2007, specialising in full-stack development, e-commerce, custom web applications, UX/UI design and UX research. Based in Cremona and Asola (Mantua), Italy, Incode also works as a white-label development partner for agencies across Italy and Europe.",
   "email": "info@incode.it",
   "telephone": "+390372027375",
   "foundingDate": "2007",
   "vatID": "IT01357300191",
   "taxID": "01357300191",
   "sameAs": ["https://github.com/incodeit"],
-  "knowsAbout": ["Full-stack development","Web development","E-commerce","UX design","UI design","WordPress","WooCommerce","Drupal","Shopify","Ruby on Rails","Node.js","Vue.js","Software architecture","System integration"],
+  "knowsAbout": ["Full-stack development","Web development","Custom web applications","E-commerce","B2B e-commerce","Wholesale portals","UX design","UI design","UX research","Usability testing","Heuristic evaluation","Design systems","Figma","WordPress","WooCommerce","Drupal","Drupal Commerce","Drupal migration","Shopify","PrestaShop","Ruby on Rails","Node.js","Vue.js","Astro","Software architecture","System integration","CMS migration","Replatforming","White-label development","Website maintenance and support","Product configurators","Data dashboards","Geoportals","LLM-based tools"],
+  "priceRange": "$$",
+  "areaServed": [{ "@type": "Place", "name": "Italy" },{ "@type": "Place", "name": "Europe" }],
+  "makesOffer": [{
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Websites & E-commerce",
+        "description": "Design and development of websites and online stores with WordPress, WooCommerce, Drupal, Drupal Commerce and Shopify, including B2B and wholesale portals with customer-specific catalogues and price lists.",
+        "provider": { "@id": "https://www.incode.it/#organization" }
+      }
+    },{
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Custom software projects",
+        "description": "Custom full-stack applications with Ruby on Rails, Node.js, Vue.js and Astro: management platforms, product configurators, booking systems, data dashboards, geoportals and LLM-based tools, including architecture and system integration.",
+        "provider": { "@id": "https://www.incode.it/#organization" }
+      }
+    },{
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "UX & UI design",
+        "description": "User experience and interface design in Figma, including design systems, component libraries and documented component guidelines, delivered standalone or as the first phase of a project Incode develops.",
+        "provider": { "@id": "https://www.incode.it/#organization" }
+      }
+    },{
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "UX research & usability testing",
+        "description": "Heuristic evaluations, moderated usability tests, benchmarking studies, A/B tests and metric-based testing, run since 2018 for organisations in banking, insurance, energy, telecommunications, travel, retail and publishing.",
+        "provider": { "@id": "https://www.incode.it/#organization" }
+      }
+    },{
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "White-label development for agencies",
+        "description": "Technical subcontracting for agencies and studios under their brand, from front-end and CMS development to complete back-end builds, with Incode handling architecture, development and release.",
+        "provider": { "@id": "https://www.incode.it/#organization" }
+      }
+    },{
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Migration & replatforming",
+        "description": "Takeover of sites built by other suppliers: codebase and infrastructure audit, restyling, replatforming, content migration from legacy CMS installations and Drupal 7, 8 and 9 upgrades to Drupal 11.",
+        "provider": { "@id": "https://www.incode.it/#organization" }
+      }
+    },{
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Maintenance & technical support",
+        "description": "Continuous technical support, security updates, CMS version upgrades and incremental development for sites already in production, including platforms Incode did not originally build.",
+        "provider": { "@id": "https://www.incode.it/#organization" }
+      }
+    }],
+  "subjectOf": [
+    {
+      "@type": "WebContent",
+      "name": "llms.txt",
+      "url": "https://www.incode.it/llms.txt",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "WebContent",
+      "name": "llms-full.txt",
+      "url": "https://www.incode.it/llms-full.txt",
+      "encodingFormat": "text/plain"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.incode.it/#faq",
+      "url": "https://www.incode.it/#aeo-faq"
+    }
+  ],
+  "location": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Montello 3/c",
+    "addressLocality": "Asola",
+    "addressRegion": "MN",
+    "postalCode": "46041",
+    "addressCountry": "IT"
+  },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Via dell'innovazione digitale 3, c/o Co-Box",
+    "streetAddress": "Via dell'Innovazione Digitale 3, c/o Co-Box",
     "addressLocality": "Cremona",
     "addressRegion": "CR",
     "postalCode": "26100",
