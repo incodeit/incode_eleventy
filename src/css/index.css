@@ -92,9 +92,31 @@
   display: none !important;
 }
 
-/* iubenda embed links in footer */
-.footer__info a {
-  color: white;
-  height: 0 !important;
-  width: auto !important;
+/* Footer links: white, no underline, underline on hover */
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* iubenda injects its own link styles — override them */
+footer a.iubenda-embed,
+footer a.iubenda-nostyle,
+footer a.footer__policy-link {
+  color: #fff !important;
+  text-decoration: none !important;
+  background: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+footer a.iubenda-embed:hover,
+footer a.iubenda-nostyle:hover,
+footer a.footer__policy-link:hover {
+  color: #fff !important;
+  text-decoration: underline !important;
 }
