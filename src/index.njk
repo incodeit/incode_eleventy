@@ -14,7 +14,7 @@ dateModified: "2026-08-05"
         <span class="hero__typewrite"></span>
       </span>
     </h1>
-    <div class="mx-auto max-w-[54rem] text-[1.8rem]">
+    <div class="mx-auto  text-[1.8rem]">
       <p class="m-0 p-0">We are an
         <strong>Italian</strong>
         <strong>creative</strong>
@@ -42,7 +42,7 @@ dateModified: "2026-08-05"
   </header>
   <div id="works-container">
     {%- for work in collections.works -%}
-      <article class="work mb-16 w-full px-4">
+      <article class="work mb-16 w-full">
         <header class="mx-auto mt-16 mb-4 w-full">
           <h3 class="text-[1.8rem] font-normal">{{ work.data.title }}</h3>
           <span>{{ work.data.subtitle }}</span>
@@ -62,14 +62,14 @@ dateModified: "2026-08-05"
   </div>
 </section>
 
-<section id="we-make-things">
-  <header class="mt-16 md:px-8">
-    <h2 class="mx-auto mb-4 w-full px-4 text-[1.8rem] leading-[1.2] md:w-5/6 md:px-0 phone:text-[2.6rem] phone:leading-none">
+<section id="we-make-things" class="md:max-w-[64rem] mx-auto">
+  <header class="mt-16 ">
+    <h2 class="mx-auto mb-4 w-full px-4 text-[1.8rem] leading-[1.2] md:px-0 phone:text-[2.6rem] phone:leading-none">
       <span>We make things.</span>
     </h2>
   </header>
-  <article class="my-16 w-full md:px-8">
-    <div class="mx-auto grid w-full grid-cols-1 gap-4 px-4 md:w-5/6 md:px-0 lg:grid-cols-2">
+  <article class="my-16 w-full ">
+    <div class="mx-auto grid w-full grid-cols-1 gap-4 px-4 md:px-0 lg:grid-cols-2">
       <div class="mb-16 w-full">
         <h3 class="text-[1.8rem] font-normal">
           Tell us your idea.<br>
@@ -95,16 +95,16 @@ dateModified: "2026-08-05"
   </article>
 </section>
 
-<section id="aeo-faq" class="mb-16" aria-labelledby="faq-heading">
-  <header class="mt-16 px-4 text-center md:px-8">
+<section id="aeo-faq" class="mb-16 md:max-w-[64rem] mx-auto" aria-labelledby="faq-heading">
+  <header class="mt-16 px-4 text-center ">
     <h2 id="faq-heading" class="mb-8 text-[1.8rem] leading-[1.2] phone:text-[2.6rem] phone:leading-none">
       Frequently asked questions
     </h2>
-    <p class="mx-auto m-0 max-w-[54rem] text-[1.25rem] phone:text-[1.5rem]">
+    <p class="mx-auto m-0  text-[1.25rem] phone:text-[1.5rem]">
       Straight answers about {{ site.name }}: services, technologies, how we work with agencies and how to reach us.
     </p>
   </header>
-  <div class="mx-auto mt-12 w-full max-w-[54rem] px-4 md:px-0">
+  <div class="mx-auto mt-12 w-full  px-4 md:px-0">
     {%- for item in faq.items -%}
       <details id="faq-{{ item.id }}" class="group border-b border-white/20 py-6"{% if loop.first %} open{% endif %}>
         <summary class="cursor-pointer list-none text-[1.4rem] font-normal text-white marker:content-none [&::-webkit-details-marker]:hidden">
@@ -119,16 +119,16 @@ dateModified: "2026-08-05"
   </div>
 </section>
 
-<section id="aeo-howto" class="mb-24" aria-labelledby="howto-heading">
-  <header class="mt-16 px-4 text-center md:px-8">
+<section id="aeo-howto" class="mb-24 md:max-w-[64rem] mx-auto" aria-labelledby="howto-heading">
+  <header class="mt-16 px-4 text-center ">
     <h2 id="howto-heading" class="mb-8 text-[1.8rem] leading-[1.2] phone:text-[2.6rem] phone:leading-none">
       How to start a project with Incode
     </h2>
-    <p class="mx-auto m-0 max-w-[54rem] text-[1.25rem] phone:text-[1.5rem]">
+    <p class="mx-auto m-0  text-[1.25rem] phone:text-[1.5rem]">
       Simple steps to begin a website, e-commerce or custom software project with us.
     </p>
   </header>
-  <ol class="mx-auto mt-12 w-full max-w-[54rem] list-decimal space-y-8 px-4 md:px-0">
+  <ol class="mx-auto mt-12 w-full  list-decimal space-y-8 px-4 md:px-0">
     <li class="ml-6 text-[1.2rem]">
       <strong class="text-white">Share your idea</strong>
       <p class="mt-2 m-0 text-[1.1rem] text-white/70">Email <a href="mailto:info@incode.it">info@incode.it</a> with your product idea, goals and timeline.</p>
@@ -142,7 +142,7 @@ dateModified: "2026-08-05"
       <p class="mt-2 m-0 text-[1.1rem] text-white/70">We design, develop and ship websites, e-commerce or custom full-stack products with you as a partner.</p>
     </li>
   </ol>
-  <p class="mx-auto mt-10 max-w-[54rem] px-4 text-center text-sm text-white/40 md:px-0">
+  <p class="mx-auto mt-10  px-4 text-center text-sm text-white/70 md:px-0">
     <time datetime="{{ dateModified or site.dateModified }}">Last updated {{ dateModified or site.dateModified }}</time>
   </p>
 </section>
