@@ -17,13 +17,13 @@ Last updated: 2026-08-05
 
 ## Services
 
-- Websites & E-commerce — WordPress, WooCommerce, Drupal, Drupal Commerce, Shopify; B2B and wholesale portals with customer-specific catalogues and price lists
-- Custom web applications — Ruby on Rails, Node.js, Vue.js, Astro; management platforms, product configurators, booking systems, data dashboards, geoportals, LLM-based tools
-- UX & UI design — Figma design systems, component libraries and documented guidelines, standalone or as the first phase of a build
-- UX research & usability testing — heuristic evaluations, moderated usability tests, benchmarking, A/B and metric-based testing (since 2018)
-- White-label development for agencies — technical subcontracting under the agency's brand, from front-end and CMS work to full back-end builds
-- Migration & replatforming — takeover of sites built by other suppliers, legacy CMS content migration, Drupal 7/8/9 to Drupal 11 upgrades
-- Maintenance & technical support — security updates, CMS version upgrades and incremental development for production sites, including platforms Incode did not build
+- Websites & E-commerce: WordPress, WooCommerce, Drupal, Drupal Commerce, Shopify; B2B and wholesale portals with customer-specific catalogues and price lists
+- Custom web applications: Ruby on Rails, Node.js, Vue.js, Astro; management platforms, product configurators, booking systems, data dashboards, geoportals, LLM-based tools
+- UX & UI design: Figma design systems, component libraries and documented guidelines, standalone or as the first phase of a build
+- UX research & usability testing: heuristic evaluations, moderated usability tests, benchmarking, A/B and metric-based testing (since 2018)
+- White-label development for agencies: technical subcontracting under the agency's brand, from front-end and CMS work to full back-end builds
+- Migration & replatforming: takeover of sites built by other suppliers, legacy CMS content migration, Drupal 7/8/9 to Drupal 11 upgrades
+- Maintenance & technical support: security updates, CMS version upgrades and incremental development for production sites, including platforms Incode did not build
 
 ## Key pages
 
