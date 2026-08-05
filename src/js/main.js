@@ -68,8 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
     new Typed(".hero__typewrite", {
       strings: ["We build.", "We code.", "We design."],
       typeSpeed: 150,
-      smartBackspace: false,
-      fadeOut: true,
+      backSpeed: 80,
+      smartBackspace: true,
+      fadeOut: false,
       loop: true,
       backDelay: 2500,
     });

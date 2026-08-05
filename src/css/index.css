@@ -61,7 +61,11 @@
   }
 
   .typed-cursor {
-    @apply font-normal text-white/30;
+    @apply font-normal text-white/70;
+  }
+
+  .hero__typewrite {
+    color: #fff;
   }
 }
 
@@ -92,31 +96,89 @@
   display: none !important;
 }
 
-/* Footer links: white, no underline, underline on hover */
-footer a {
-  color: #fff;
-  text-decoration: none;
+/*
+  Footer:
+  - Inline links inside copy must stay underlined (a11y: not color-only)
+  - Standalone policy links: no underline by default, underline on hover
+  - Touch targets ≥ 44px
+*/
+footer div.footer__info a {
+  color: #fff !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
 }
 
-footer a:hover {
-  color: #fff;
-  text-decoration: underline;
+footer div.footer__info a:hover {
+  color: #fff !important;
+  text-decoration: underline !important;
 }
 
-/* iubenda injects its own link styles — override them */
+footer ul.footer__info a,
 footer a.iubenda-embed,
 footer a.iubenda-nostyle,
 footer a.footer__policy-link {
   color: #fff !important;
   text-decoration: none !important;
   background: none !important;
-  padding: 0 !important;
   box-shadow: none !important;
+  border: 0 !important;
+  margin: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 44px;
+  min-width: 44px;
+  height: 44px !important;
+  line-height: 1.2 !important;
+  padding: 0 0.75rem !important;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  font-family: inherit !important;
 }
 
+footer ul.footer__info {
+  width: 100%;
+  align-items: center;
+}
+
+footer ul.footer__info > li {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+@media (min-width: 48rem) {
+  footer ul.footer__info {
+    flex-wrap: nowrap;
+    width: auto;
+  }
+}
+
+footer ul.footer__info a:hover,
 footer a.iubenda-embed:hover,
 footer a.iubenda-nostyle:hover,
 footer a.footer__policy-link:hover {
   color: #fff !important;
   text-decoration: underline !important;
+}
+
+/* Touch-friendly interactive controls */
+#primary-menu a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.5rem 0.25rem;
+}
+
+#aeo-faq summary {
+  min-height: 44px;
+  padding: 0.5rem 0;
+}
+
+#main-header a[rel="home"] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
