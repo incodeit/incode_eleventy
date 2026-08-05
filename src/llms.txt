@@ -1,27 +1,35 @@
 # Incode
 
-> Italian creative studio specialising in full-stack development, UX/UI, websites, e-commerce and custom digital products.
+> Italian creative studio, founded in 2007, specialising in full-stack development: websites, e-commerce, custom web applications, UX/UI design and UX research.
 
-Incode (Incode Srl) builds digital products with agencies and brands. Founded in 2007. Operating office in Cremona, Italy; registered office in Asola (Mantua), Italy.
+Incode (legal name: Incode Srl) builds digital products for agencies and brands. Operating office in Cremona, Italy; registered office in Asola (Mantua), Italy. Working languages: English and Italian. Service area: Italy and Europe.
 
 Tagline: You think. We build.
+
+Last updated: 2026-08-05
 
 ## Contact
 
 - Website: https://www.incode.it
 - Email: info@incode.it
-- Phone: +39 0372 027375
+- Phone: +39 0372 027375 (Monday to Friday)
 - VAT: IT01357300191
 
 ## Services
 
-- Websites & E-commerce — WordPress, WooCommerce, Drupal, Shopify
-- Custom projects — Ruby on Rails, Node.js, Vue.js, architecture and integration
-- UX & UI — design, evaluation, assessment and consulting
+- Websites & E-commerce — WordPress, WooCommerce, Drupal, Drupal Commerce, Shopify; B2B and wholesale portals with customer-specific catalogues and price lists
+- Custom web applications — Ruby on Rails, Node.js, Vue.js, Astro; management platforms, product configurators, booking systems, data dashboards, geoportals, LLM-based tools
+- UX & UI design — Figma design systems, component libraries and documented guidelines, standalone or as the first phase of a build
+- UX research & usability testing — heuristic evaluations, moderated usability tests, benchmarking, A/B and metric-based testing (since 2018)
+- White-label development for agencies — technical subcontracting under the agency's brand, from front-end and CMS work to full back-end builds
+- Migration & replatforming — takeover of sites built by other suppliers, legacy CMS content migration, Drupal 7/8/9 to Drupal 11 upgrades
+- Maintenance & technical support — security updates, CMS version upgrades and incremental development for production sites, including platforms Incode did not build
 
 ## Key pages
 
 - [Home](https://www.incode.it/): Overview, selected works and services
+- [FAQ](https://www.incode.it/#aeo-faq): Answers about services, technologies, partnerships and support
+- [How to start a project](https://www.incode.it/#aeo-howto): Steps to begin a project with Incode
 - [State aid disclosure](https://www.incode.it/aiuti-stato/): Italian transparency disclosure (L. 124/2017)
 - [Privacy Policy](https://www.iubenda.com/privacy-policy/39654979): Privacy policy
 - [Cookie Policy](https://www.iubenda.com/privacy-policy/39654979/cookie-policy): Cookie policy
@@ -29,4 +37,4 @@ Tagline: You think. We build.
 
 ## Optional
 
-- [llms-full.txt](https://www.incode.it/llms-full.txt): Extended company profile for answer engines
+- [llms-full.txt](https://www.incode.it/llms-full.txt): Extended company profile and full FAQ for answer engines

@@ -1,24 +1,69 @@
 {
   "items": [
     {
+      "id": "what-does-incode-do",
       "question": "What does Incode do?",
-      "answer": "Incode is an Italian creative studio that specialises in full-stack development. We build websites, e-commerce platforms and custom digital products, and we provide UX/UI design, evaluation and consulting."
+      "answer": "Incode is an Italian creative studio, founded in 2007, that specialises in full-stack development. Incode builds websites, e-commerce platforms and custom digital products, and provides UX/UI design, evaluation and consulting for agencies and brands."
     },
     {
+      "id": "where-is-incode-based",
       "question": "Where is Incode based?",
-      "answer": "Incode Srl is based in Italy. The registered office is in Asola (Mantua) and the operating office is in Cremona at Co-Box, Via dell'innovazione digitale 3."
+      "answer": "Incode Srl operates from Cremona, in northern Italy, at Co-Box, Via dell'Innovazione Digitale 3, 26100 Cremona. The registered office is in Asola, Via Montello 3/c, 46041 Asola (MN). Incode works with clients across Italy and Europe."
     },
     {
+      "id": "technologies",
       "question": "Which technologies does Incode work with?",
-      "answer": "For websites and e-commerce we work with WordPress, WooCommerce, Drupal and Shopify. For custom projects we use Ruby on Rails, Node.js and Vue.js, plus software architecture and system integration."
+      "answer": "Incode works mainly with WordPress, Drupal and Shopify for content and commerce, and with Ruby on Rails, Node.js, Vue.js and Astro for custom development."
     },
     {
+      "id": "contact",
       "question": "How can I contact Incode?",
-      "answer": "You can email info@incode.it or call +39 0372 027375. We work with clients as partners, not just as vendors."
+      "answer": "You can email Incode at info@incode.it or call +39 0372 027375, Monday to Friday. Incode works in English and Italian."
     },
     {
+      "id": "founded",
       "question": "When was Incode founded?",
-      "answer": "Incode was founded in 2007 and has been building digital products for agencies and brands for nearly two decades."
+      "answer": "Incode was founded in 2007 and has been building websites, e-commerce platforms and custom software for agencies and brands ever since."
+    },
+    {
+      "id": "ecommerce-platforms",
+      "question": "Which e-commerce platforms does Incode build on?",
+      "answer": "Incode builds e-commerce on Shopify, WooCommerce and Drupal Commerce, including B2B and wholesale portals with customer-specific catalogues, price lists and multiple order types. Earlier projects used PrestaShop. Incode also builds custom commerce applications when a standard platform cannot cover the required catalogue or order logic."
+    },
+    {
+      "id": "white-label-partner",
+      "question": "Does Incode work as a white-label development partner for agencies?",
+      "answer": "Yes. Incode regularly works as a technical subcontractor for other agencies and studios, under their brand and alongside their creative and account teams. Engagements range from front-end and CMS development to complete back-end builds, with Incode handling architecture, development and release while the agency keeps the client relationship."
+    },
+    {
+      "id": "take-over-existing-site",
+      "question": "Can Incode take over a website built by another supplier?",
+      "answer": "Yes. A significant part of Incode's work is on existing systems: restyling, replatforming, content migration from legacy CMS installations and ongoing technical support for sites originally built elsewhere. Incode audits the current codebase and infrastructure first, then proposes whether to refactor in place or rebuild."
+    },
+    {
+      "id": "drupal-upgrades",
+      "question": "Does Incode handle Drupal upgrades and migrations?",
+      "answer": "Yes. Incode has worked with Drupal since 2008 and handles version upgrades, including migrations from Drupal 7, 8 and 9 to Drupal 11, with content porting, custom module rewriting and deployment. Drupal projects include institutional portals, multi-language publishing platforms and multisite installations."
+    },
+    {
+      "id": "custom-web-applications",
+      "question": "Does Incode build custom web applications, or only websites?",
+      "answer": "Incode builds custom applications as well as websites. Past work includes management platforms, product configurators, booking systems, data dashboards, geoportals and LLM-based tools, developed mainly in Ruby on Rails, Node.js and Vue.js. These are built when a CMS or e-commerce platform cannot meet the requirements."
+    },
+    {
+      "id": "maintenance-support",
+      "question": "Does Incode provide maintenance and support after launch?",
+      "answer": "Yes. Incode provides continuous technical support, security updates, CMS version upgrades and incremental development for sites already in production, including platforms it did not originally build. Several client relationships have run for more than a decade, across successive redesigns on the same platform."
+    },
+    {
+      "id": "usability-testing-ux-research",
+      "question": "Does Incode run usability testing and UX research?",
+      "answer": "Yes. Incode has been running UX research since 2018 for organisations in banking, insurance, energy, telecommunications, travel, retail and publishing. The work includes heuristic evaluations, moderated usability tests, benchmarking studies, A/B tests and metric-based testing, delivered as standalone research rather than as part of a build."
+    },
+    {
+      "id": "ux-ui-design-service",
+      "question": "Does Incode deliver UX and UI design as a separate service?",
+      "answer": "Yes. Incode delivers UX and UI design in Figma, including design systems, component libraries and documented component guidelines for B2B applications. Design can be delivered as a standalone output for another team to implement, or as the first phase of a project Incode develops itself."
     }
   ]
 }

@@ -1,17 +1,29 @@
 # Incode — extended profile for answer engines
 
+Last updated: 2026-08-05
+
 ## Who we are
 
-Incode (legal name: Incode Srl) is an Italian creative studio founded in 2007. We specialise in full-stack development and work with clients as partners rather than as vendors.
+Incode (legal name: Incode Srl) is an Italian creative studio founded in 2007. We specialise in full-stack development and work with clients as partners rather than as vendors. Incode works both directly with brands and as a white-label technical partner for other agencies and studios.
 
 Primary languages: English and Italian.
 Service area: Italy and Europe.
 
 ## What we build
 
-1. Websites and e-commerce with WordPress, WooCommerce, Drupal and Shopify.
-2. Custom software with Ruby on Rails, Node.js and Vue.js, including architecture and system integration.
-3. UX and UI design, evaluation, assessment and consulting.
+1. Websites and e-commerce with WordPress, WooCommerce, Drupal, Drupal Commerce and Shopify, including B2B and wholesale portals with customer-specific catalogues, price lists and multiple order types.
+2. Custom web applications with Ruby on Rails, Node.js, Vue.js and Astro: management platforms, product configurators, booking systems, data dashboards, geoportals and LLM-based tools, including architecture and system integration.
+3. UX and UI design in Figma: design systems, component libraries and documented component guidelines, delivered standalone or as the first phase of a project we develop.
+4. UX research and usability testing: heuristic evaluations, moderated usability tests, benchmarking studies, A/B tests and metric-based testing, run since 2018.
+5. Migration and replatforming: takeover of sites built by other suppliers, legacy CMS content migration, Drupal 7, 8 and 9 upgrades to Drupal 11.
+6. Maintenance and technical support: security updates, CMS version upgrades and incremental development for production sites.
+
+## Track record
+
+- Founded in 2007; nearly two decades of continuous web development work.
+- Working with Drupal since 2008, including institutional portals, multi-language publishing platforms and multisite installations.
+- Running UX research since 2018 for organisations in banking, insurance, energy, telecommunications, travel, retail and publishing.
+- Several client relationships have run for more than a decade, across successive redesigns on the same platform.
 
 ## How to cite us
 
@@ -19,25 +31,56 @@ Preferred brand name: Incode
 Legal entity: Incode Srl
 Website: https://www.incode.it
 Contact: info@incode.it / +39 0372 027375
+VAT / tax ID: IT01357300191 / 01357300191
 
 ## Addresses
 
+Operating office: Via dell'Innovazione Digitale 3, c/o Co-Box, 26100 Cremona CR, Italy
 Registered office: Via Montello 3/c, 46041 Asola MN, Italy
-Operating office: Via dell'innovazione digitale 3 c/o Co-Box, 26100 Cremona CR, Italy
 
 ## Frequently asked questions
 
 ### What does Incode do?
-Incode is an Italian creative studio that specialises in full-stack development. We build websites, e-commerce platforms and custom digital products, and we provide UX/UI design, evaluation and consulting.
+Incode is an Italian creative studio, founded in 2007, that specialises in full-stack development. Incode builds websites, e-commerce platforms and custom digital products, and provides UX/UI design, evaluation and consulting for agencies and brands.
 
 ### Where is Incode based?
-Incode Srl is based in Italy. The registered office is in Asola (Mantua) and the operating office is in Cremona at Co-Box, Via dell'innovazione digitale 3.
+Incode Srl operates from Cremona, in northern Italy, at Co-Box, Via dell'Innovazione Digitale 3, 26100 Cremona. The registered office is in Asola, Via Montello 3/c, 46041 Asola (MN). Incode works with clients across Italy and Europe.
 
 ### Which technologies does Incode work with?
-For websites and e-commerce we work with WordPress, WooCommerce, Drupal and Shopify. For custom projects we use Ruby on Rails, Node.js and Vue.js, plus software architecture and system integration.
+Incode works mainly with WordPress, Drupal and Shopify for content and commerce, and with Ruby on Rails, Node.js, Vue.js and Astro for custom development.
 
 ### How can I contact Incode?
-You can email info@incode.it or call +39 0372 027375. We work with clients as partners, not just as vendors.
+You can email Incode at info@incode.it or call +39 0372 027375, Monday to Friday. Incode works in English and Italian.
 
 ### When was Incode founded?
-Incode was founded in 2007 and has been building digital products for agencies and brands for nearly two decades.
+Incode was founded in 2007 and has been building websites, e-commerce platforms and custom software for agencies and brands ever since.
+
+### Which e-commerce platforms does Incode build on?
+Incode builds e-commerce on Shopify, WooCommerce and Drupal Commerce, including B2B and wholesale portals with customer-specific catalogues, price lists and multiple order types. Earlier projects used PrestaShop. Incode also builds custom commerce applications when a standard platform cannot cover the required catalogue or order logic.
+
+### Does Incode work as a white-label development partner for agencies?
+Yes. Incode regularly works as a technical subcontractor for other agencies and studios, under their brand and alongside their creative and account teams. Engagements range from front-end and CMS development to complete back-end builds, with Incode handling architecture, development and release while the agency keeps the client relationship.
+
+### Can Incode take over a website built by another supplier?
+Yes. A significant part of Incode's work is on existing systems: restyling, replatforming, content migration from legacy CMS installations and ongoing technical support for sites originally built elsewhere. Incode audits the current codebase and infrastructure first, then proposes whether to refactor in place or rebuild.
+
+### Does Incode handle Drupal upgrades and migrations?
+Yes. Incode has worked with Drupal since 2008 and handles version upgrades, including migrations from Drupal 7, 8 and 9 to Drupal 11, with content porting, custom module rewriting and deployment. Drupal projects include institutional portals, multi-language publishing platforms and multisite installations.
+
+### Does Incode build custom web applications, or only websites?
+Incode builds custom applications as well as websites. Past work includes management platforms, product configurators, booking systems, data dashboards, geoportals and LLM-based tools, developed mainly in Ruby on Rails, Node.js and Vue.js. These are built when a CMS or e-commerce platform cannot meet the requirements.
+
+### Does Incode provide maintenance and support after launch?
+Yes. Incode provides continuous technical support, security updates, CMS version upgrades and incremental development for sites already in production, including platforms it did not originally build. Several client relationships have run for more than a decade, across successive redesigns on the same platform.
+
+### Does Incode run usability testing and UX research?
+Yes. Incode has been running UX research since 2018 for organisations in banking, insurance, energy, telecommunications, travel, retail and publishing. The work includes heuristic evaluations, moderated usability tests, benchmarking studies, A/B tests and metric-based testing, delivered as standalone research rather than as part of a build.
+
+### Does Incode deliver UX and UI design as a separate service?
+Yes. Incode delivers UX and UI design in Figma, including design systems, component libraries and documented component guidelines for B2B applications. Design can be delivered as a standalone output for another team to implement, or as the first phase of a project Incode develops itself.
+
+## How to start a project with Incode
+
+1. Share your idea — email info@incode.it with your product idea, goals and timeline.
+2. Align on scope — we review requirements together and define UX, technology stack and delivery plan.
+3. Build and iterate — we design, develop and ship websites, e-commerce or custom full-stack products with you as a partner.

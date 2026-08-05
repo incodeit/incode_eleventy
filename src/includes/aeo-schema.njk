@@ -173,16 +173,26 @@
   "@type": "FAQPage",
   "@id": {{ (site.url + "/#faq") | dump | safe }},
   "url": {{ (site.url + "/#aeo-faq") | dump | safe }},
+  "name": "Frequently asked questions about Incode",
+  "description": "Answers about Incode's services, technologies, e-commerce and Drupal work, white-label partnerships, UX research and support.",
+  "inLanguage": "en",
+  "isPartOf": { "@id": {{ websiteId | dump | safe }} },
+  "about": { "@id": {{ orgId | dump | safe }} },
+  "publisher": { "@id": {{ orgId | dump | safe }} },
   "datePublished": {{ site.datePublished | dump | safe }},
   "dateModified": {{ site.dateModified | dump | safe }},
   "mainEntity": [
     {%- for item in faq.items -%}
     {
       "@type": "Question",
+      "@id": {{ (site.url + "/#faq-" + item.id) | dump | safe }},
+      "url": {{ (site.url + "/#faq-" + item.id) | dump | safe }},
       "name": {{ item.question | dump | safe }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ item.answer | dump | safe }}
+        "text": {{ item.answer | dump | safe }},
+        "url": {{ (site.url + "/#faq-" + item.id) | dump | safe }},
+        "author": { "@id": {{ orgId | dump | safe }} }
       }
     }{% if not loop.last %},{% endif %}
     {%- endfor -%}
