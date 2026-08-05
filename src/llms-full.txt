@@ -1,4 +1,4 @@
-# Incode — extended profile for answer engines
+# Incode extended profile for answer engines
 
 Last updated: 2026-08-05
 
@@ -81,6 +81,6 @@ Yes. Incode delivers UX and UI design in Figma, including design systems, compon
 
 ## How to start a project with Incode
 
-1. Share your idea — email info@incode.it with your product idea, goals and timeline.
-2. Align on scope — we review requirements together and define UX, technology stack and delivery plan.
-3. Build and iterate — we design, develop and ship websites, e-commerce or custom full-stack products with you as a partner.
+1. Share your idea. Email info@incode.it with your product idea, goals and timeline.
+2. Align on scope. We review requirements together and define UX, technology stack and delivery plan.
+3. Build and iterate. We design, develop and ship websites, e-commerce or custom full-stack products with you as a partner.
