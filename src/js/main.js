@@ -25,26 +25,33 @@ function revealEmails() {
   });
 }
 
-async function consoleEasterEgg() {
+function consoleEasterEgg() {
   const logoStyle =
     'color: #000; background: #fff; font-family: Impact, Haettenschweiler, "Arial Black", "Helvetica Neue", sans-serif; font-size: 64px; font-weight: 900; letter-spacing: 0.04em; padding: 16px 12px 8px; line-height: 1;';
   const textStyle =
     'color: #000; background: #fff; font-family: Courier, "Courier New", monospace; font-size: 12px; padding: 8px 12px 16px;';
 
-  let body =
-    "Hello everyone, it's great that you've come to visit us here :-) drop us a line at info@incode.it\nand remember:";
+  const jokes = [
+    "Why do programmers prefer dark mode? Because light attracts bugs.",
+    "A SQL query walks into a bar, walks up to two tables and asks: \"Can I join you?\"",
+    "There are only 10 kinds of people: those who understand binary and those who don't.",
+    "Why did the developer go broke? He used up all his cache.",
+    "!false — it's funny because it's true.",
+    "To understand recursion, you must first understand recursion.",
+    "It works on my machine.",
+    "Why do Java developers wear glasses? Because they don't C#.",
+    "There are two hard things in computer science: cache invalidation, naming things, and off-by-one errors.",
+    "I'd tell you a UDP joke, but you might not get it.",
+    "A programmer's wife says: \"Buy a loaf of bread. If they have eggs, get a dozen.\" He comes home with 12 loaves.",
+    "Debugging: being the detective in a crime movie where you are also the murderer.",
+    "Why was the function sad after the party? Too many arguments, and no return.",
+    "A good programmer looks both ways before crossing a one-way street.",
+  ];
+  const joke = jokes[Math.floor(Math.random() * jokes.length)];
 
-  try {
-    const res = await fetch("https://geek-jokes.sameerkumar.website/api?format=json");
-    if (res.ok) {
-      const { joke } = await res.json();
-      if (joke) {
-        body += `\n${joke}\n— source: geek-jokes.sameerkumar.website`;
-      }
-    }
-  } catch {
-    // silently skip joke if the request fails
-  }
+  const body =
+    "Hello everyone, it's great that you've come to visit us here :-) drop us a line at info@incode.it\nand remember:\n" +
+    joke;
 
   console.log(`%cincode%c${body}`, logoStyle, textStyle);
 }
