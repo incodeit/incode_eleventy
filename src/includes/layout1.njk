@@ -51,6 +51,33 @@
 
         {% include "aeo-schema.njk" %}
 
+        <!-- Google Consent Mode v2: default denied -->
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied',
+          'analytics_storage': 'denied',
+          'functionality_storage': 'denied',
+          'personalization_storage': 'denied',
+          'security_storage': 'granted',
+          'wait_for_update': 500
+        });
+        gtag('set', 'ads_data_redaction', true);
+        gtag('set', 'url_passthrough', true);
+        </script>
+
+        <!-- iubenda cookie banner -->
+        <script type="text/javascript">
+        var _iub = _iub || [];
+        _iub.csConfiguration = {"siteId":3883181,"cookiePolicyId":39654979,"storage":{"useSiteId":true}};
+        _iub.csLangConfiguration = {"en":{"cookiePolicyId":39654979}};
+        </script>
+        <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3883181.js"></script>
+        <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+
         <!-- Google Tag Manager (deferred) -->
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -139,14 +166,6 @@
             </footer>
         </main>
 
-        <!-- iubenda cookie banner (async, after content) -->
-        <script>
-        var _iub = _iub || [];
-        _iub.csConfiguration = {"siteId":3883181,"cookiePolicyId":39654979,"lang":"en","storage":{"useSiteId":true}};
-        </script>
-        <script src="https://cs.iubenda.com/sync/3883181.js" defer></script>
-        <script src="https://cdn.iubenda.com/cs/gpp/stub.js" defer></script>
-        <script src="https://cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
         <script src="https://cdn.iubenda.com/iubenda.js" defer></script>
 
         <script src="{{ '/main.js' | url }}" defer></script>
